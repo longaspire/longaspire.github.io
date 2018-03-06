@@ -1,2 +1,2 @@
 # longaspire.github.io
-my webpage in github
+This is my web-page on GitHub.
