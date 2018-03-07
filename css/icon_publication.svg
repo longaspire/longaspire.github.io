@@ -21,7 +21,7 @@
    sodipodi:docname="icon_publication.svg"><metadata
    id="metadata14"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs12" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -31,15 +31,15 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1280"
-   inkscape:window-height="961"
+   inkscape:window-width="1920"
+   inkscape:window-height="1137"
    id="namedview10"
    showgrid="false"
    inkscape:zoom="13.350176"
-   inkscape:cx="19.33753"
-   inkscape:cy="14.539197"
-   inkscape:window-x="-8"
-   inkscape:window-y="168"
+   inkscape:cx="20.161489"
+   inkscape:cy="13.715238"
+   inkscape:window-x="1272"
+   inkscape:window-y="-8"
    inkscape:window-maximized="1"
    inkscape:current-layer="socialicious" />
 <style
@@ -94,12 +94,13 @@
    xml:space="preserve"
    style="font-size:16.287117px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b3b3b3;fill-opacity:1;stroke:none;font-family:FZZhunYuan-M02T;-inkscape-font-specification:FZZhunYuan-M02T"
    x="1.3519739"
-   y="14.91782"
+   y="14.468388"
    id="text2985"
    sodipodi:linespacing="125%"><tspan
      sodipodi:role="line"
      id="tspan2987"
      x="1.3519739"
-     y="14.91782"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b3b3b3;font-family:FZZhunYuan-M02T;-inkscape-font-specification:FZZhunYuan-M02T">Pb</tspan></text>
+     y="14.468388"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b3b3b3;font-family:Tahoma;-inkscape-font-specification:Tahoma">Pb</tspan></text>
+
 </svg>
