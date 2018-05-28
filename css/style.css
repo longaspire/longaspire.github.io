@@ -34,16 +34,6 @@ img {
     text-align: center;
 }
 
-.imgmid {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    height: 100%;
-    width: 1px;
-    margin-left: -1px;
-    vertical-align: middle
-}
-
 .avator img {
     width: 119px;
     height: 166px;
@@ -57,9 +47,27 @@ img {
     margin-top: 4px;
 }
 
+.guide i {
+    color: #999;
+    margin-right: 1px;
+}
+
+.guide a {
+    color: #333;
+    margin-right: 6px;
+}
+
+.guide a:visited {
+    color: #333;
+}
+
+.guide a:hover {
+    color: #4183C4;
+}
+
 ul.errorlist {
     list-style-type: none;
-    margin: 0px;
+    margin: 0 px;
 }
 
 ul.errorlist li {
