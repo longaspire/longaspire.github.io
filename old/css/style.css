@@ -1,0 +1,112 @@
+body, div {
+    font-size: 18px;
+    font-family: Optima, Candara, Georgia, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+}
+
+img {
+    margin: 0px 1px 0px 4px;
+}
+
+.intro{
+    margin-top: 1px;
+}
+
+.basicinfo {
+    display: flex;
+}
+
+.basicinfo i {
+    color: #999;
+    margin-right: 4px;
+}
+
+.contact{
+    margin-top: -3px;
+}
+
+.basicinfo .right {
+    padding-left: 1rem;
+    margin-left: auto;
+    flex: 0 0 auto;
+}
+
+.avator {
+    height: 166px;
+    text-align: center;
+}
+
+.avator img {
+    width: 119px;
+    height: 166px;
+    vertical-align: middle;
+}
+
+.intro {
+}
+
+.guide {
+    margin-top: 4px;
+}
+
+.guide i {
+    color: #999;
+    margin-right: 4px;
+}
+
+.guide a {
+    color: #333;
+    margin-right: 6px;
+}
+
+.guide a:visited {
+    color: #333;
+}
+
+.guide a:hover {
+    color: #4183C4;
+}
+
+.intro i {
+    color: #999;
+    margin-right: 7px;
+}
+
+ul.errorlist {
+    list-style-type: none;
+    margin: 0 px;
+}
+
+ul.errorlist li {
+    color: #fff !important;
+    margin: 0 0 2px 0;
+    padding-left: 15px;
+}
+
+ul.errorlist {
+    padding-left: 0 !important;
+    margin-bottom: 10px;
+}
+
+ul.errorlist {
+    border: 1px solid #ff0039;
+    padding: 13px;
+    background-color: #ff0039;
+}
+
+a {
+    text-decoration: none;
+}
+
+ins.adsbygoogle {
+    background: transparent !important;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+}

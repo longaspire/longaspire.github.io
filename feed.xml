@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Huan Li's Personal Page</title>
+    <description>Remember what should be remembered, and forget what should be forgotten. Alter what is changeable, and accept what is mutable. -- “The Catcher in the Rye”
+</description>
+    <link>https://longaspire.github.io/</link>
+    <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 28 Nov 2019 22:56:40 +0100</pubDate>
+    <lastBuildDate>Thu, 28 Nov 2019 22:56:40 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New updates</title>
+        <description>&lt;p&gt;Hi everyone, I am happy to announce that my personal page has been upgraded and moved to the domain of AAU-CS. From now on, I will update my status from time to time. Hope I can share more good news and interesting things with you.&lt;/p&gt;
+
+&lt;!-- ### Introduction
+
+Recurrent Neural Networks and their variations are very likely to overfit the training data. This is due to the large network formed by unfolding each cell of the RNN, and *relatively* small number of parameters (since they are shared over each time step) and training data. Thus, the perplexities obtained on the test data are often quite larger than expected. Several attempts have been made to minimize this problem using varied **regularization** techniques. This paper tackles this issue by proposing a model that combines several of such existing methods.
+
+*Merity et al*'s model is a modification of the standard **LSTM** in which *DropConnect* is applied to the hidden weights in the *recurrent* connections of the LSTM for regularization. The dropout mask for each weight is preserved and the same mask is used across all time steps, thereby adding negligible computation overhead. Apart from this, several other techniques have been incorporated :
+* **Variational dropout** : The same dropout mask is used for a particular recurrent connection in both the forward and backward pass for all time steps. Each input of a mini-batch has a separate dropout mask, which ensures that the regularizing effect due to it isn't identical across different inputs.
+* **Embedding dropout** : Dropout with dropout probability $$p_e$$ is applied to word embedding vectors, which results in new word vectors which are identically zero for the dropped words. The remaining word vectors are scaled by $$\frac{1}{1-p_e}$$ as compensation.
+* **AR and TAR** : AR (Activation Regularization) and TAR (Temporal Activation Regularization) are modifications of $$L_2$$ regularization, wherein the standard technique is applied to dropped *output activations* and dropped *change in output activations* respectively. Mathematically, the additional terms in the cost function $$J$$ are (here $$\alpha$$ and $$\beta$$ are scaling constants and $$\textbf{D}$$ is the dropout mask) :
+
+$$
+J_{AR}=\alpha L_2\left(\textbf{D}_l^t\odot h_l^t\right)\\
+J_{TAR}=\beta L_2\left(\textbf{D}_l^t\odot\left(h_l^t - h_l^{t-1}\right)\right)
+$$
+
+* **Weight tying** : In this method, the parameters for word embeddings and the final output layer are shared.
+* **Variable backpropagation steps** : A random number of BPTT steps are taken instead of a fixed number, whose mean is very close to the original fixed value ($$s$$). The BPTT step-size ($$x$$) is drawn from the following distribution (here $$\mathcal{N}$$ is the Gaussian distribution, $$p$$ is a number close to 0.95 and $$\sigma^2$$ is the desired variance) :
+
+$$
+x \sim p\cdot \mathcal{N}\left(s,\sigma^2\right) + (1-p)\cdot \mathcal{N}\left(\frac{s}{2},\sigma^2\right)
+$$
+
+* **Independent sizes of word embeddings and hidden layer** : The sizes of the hidden layer and word embeddings are kept independent of each other.
+
+The paper also introduces a new optimization algorithm, namely **Non-monotonically Triggered Averaged Stochastic Gradient Descent** or NT-ASGD, which can be programmatically described as follows :
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;NT_ASGD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+    Input parameters :
+    f  - objective function
+    t  - stopping criterion
+    w0 - initial parameters
+    n  - non-monotonicity interval
+    L  - number of epochs after which finetuning is done
+    lr - learning rate
+
+    Returns :
+    parameter(s) that minimize `f`
+    &quot;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;logs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# `func_grad` computes gradient of `f` at `w`
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;func_grad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;# Compute model's perplexity for current parameters
+&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;perplexity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]):&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;logs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Return the average of best `k-T+1` parameters
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;     &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+They also combined their **AWD-LSTM** (ASGD Weight Dropped LSTM) with a neural cache model to obtain further reduction in perplexities. A *neural cache model* stores previous states in memory, and predicts the output obtained by a *convex combination* of the output using stored states and the AWD-LSTM.
+
+### Network description
+*Merity et al*'s model used a 3-layer weight dropped LSTM with dropout probability `0.5` for **PTB corpus** and `0.65` for **WikiText-2**, combined with several of the above regularization techniques. The different hyperparameters (as referred to in the discussion above) are as follows : hidden layer size ($$H$$) = `1150`, embedding size ($$D$$) = `400`, number of epochs = `750`, $$L$$ = `1`, $$n$$ = `5`, learning rate = `30`, Gradients clipped at `0.25`, $$p$$ = `0.95`, $$s$$ = `70`, $$\sigma^2$$ = `5`, $$\alpha$$ = `2`, $$\beta$$ = `1`, dropout probabilities for input, hidden outputs, final output and embeddings as `0.4`, `0.3`, `0.4` and `0.1` respectively.
+
+Word embedding weights were initialized from $$\mathcal{U}\left[-0.1,0.1\right]$$ and all other hidden weights from $$\mathcal{U}\left[-\frac{1}{\sqrt{1150}},\frac{1}{\sqrt{1150}}\right]$$. Mini-batch size of `40` was used for PTB and `80` for WT-2.
+
+### Result highlights
+* 3-layer AWD-LSTM with weight tying attained 57.3 PPL on PTB
+* 3-layer AWD-LSTM with weight tying and a continuous cache pointer attained 52.8 PPL on PTB --&gt;
+
+&lt;!-- Write your post content here in normal `markdown`. An example post is shown below for reference. 
+
+### Introduction
+Regularization is an important step during the training of neural networks. It helps to generalize the model by reducing the possibility of overfitting the training data. There are several types of regularization techniques, with L2 , L1, elastic-net (linear combination of L2 and L1 regularization), dropout and drop-connect being the major ones. While L2, L1 and elastic-net regularization techniques work by constraining the trainable parameters (or *weights*) from attaining large values (so that no drastic changes in output are observed for slight changes in the input; or in other words, they prefer *diffused* weights rather than *peaked* ones), **dropout** and drop-connect work by averaging the task over a dynamically and randomly generated large *ensemble* of networks. These networks are obtained by randomly disconnecting neurons (*dropout*) or weights (*drop-connect*) from the original network so as to obtain a subnetwork on which the training process is carried out (although for $$\approx1$$ epoch for each, since the chance of the same subnetwork being generated again is very rare).
+
+Application of dropout to feedforward neural networks gives promising results. RNNs are thought of as individual *cells* that are *unfolded* over several time-steps, with the input at each time-step being a token of the sequence. When dropout is used for regularizing such a network, the 'disturbance' it generates at each time step propagates over a long interval, thereby decreasing the network's ability to represent long range dependencies. Thus, applying dropout in the standard manner to RNNs fails to give any improvement. It is here where *Zaremba et al*'s research comes into the picture.
+### Network description
+The network architecture that *Zaremba et al* proposed is quite simple and intuitive. In case of deep RNNs (i.e. RNNs spanning over several layers ($$h$$) where output of $$h_{l-1}^{t}$$ is used as the input for $$h_l^t$$), all connections between the cells in unfolded state can be broadly classified into two categories - *recurrent* and *non-recurrent*. The connections between cells in the same layer i.e. $$h_l^t ~-~ h_l^{t+1}~~\forall t$$ are *recurrent* connections, and those between cells in adjacent layers i.e. $$h_l^t ~-~ h_{l+1}^t~~\forall l$$ are *non-recurrent* connections. *Zaremba et al* suggested that **dropout** should be applied only to non-recurrent connections - thereby preventing problems which arose earlier.
+
+The modified network for LSTM units can be mathematically represented as follows:
+
+Denoting $$T_{m,n}$$ as an affine transformation from $$\mathbb{R}^m\rightarrow\mathbb{R}^n$$ ( i.e. $$T_{m,n}(x)=Wx+b$$ where $$x\in\mathbb{R}^{m\times1}$$, $$W\in\mathbb{R}^{n\times m}$$ and $$b\in\mathbb{R}^{n\times1}$$ and similarly for multiple inputs) and $$\otimes$$ as elementwise multiplication, we have :
+
+$$
+f_l^t=\text{sigmoid}\left(T_{N,D}^1\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+i_l^t=\text{sigmoid}\left(T_{N,D}^2\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+o_l^t=\text{sigmoid}\left(T_{N,D}^3\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+u_l^t=\text{tanh}\left(T_{N,D}^4\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+c_l^t=c_l^{t-1}\otimes f_l^t + u_l^t\otimes i_l^t \\
+h_l^t = \text{tanh}\left(c_l^t\right)\otimes o_l^t
+$$
+
+Here, $$\textbf{D}$$ is the dropout *layer* or operator which sets a subset of its input randomly to zero with dropout probability `p`. This modification can be adopted for any other RNN architecture.
+
+*Zaremba et al* used these architectures for their experiments in which each cell was unrolled for 35 steps. Mini-batch size was 20 for both :
+
+**Medium LSTM** :
+Hidden-layer dimension = `650`,
+Weights initialized uniformly in `[-0.05,0.05]`,
+Dropout probability = `0.5`,
+Number of epochs = `39`,
+Learning rate = `1` which decays by a factor of `1.2` after 6 epochs,
+Gradients clipped at `5`.
+
+**Large LSTM** :
+Hidden-layer dimension = `1500`,
+Weights initialized uniformly in `[-0.04,0.04]`,
+Dropout probability = `0.65`,
+Number of epochs = `55`,
+Learning rate = `1` which decays by a factor of `1.15` after 14 epochs,
+Gradients clipped at `10`.
+### Result highlights
+* 78.4 PPL on Penn TreeBank dataset using a single **Large LSTM**
+* 68.7 PPL on Penn TreeBank dataset using an ensemble of 38 **Large LSTM**s --&gt;
+</description>
+        <pubDate>Sun, 10 Nov 2019 16:10:00 +0100</pubDate>
+        <link>https://longaspire.github.io/blog/2019/11/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/blog/2019/11/post-1</guid>
+        
+        
+        <category>personal information</category>
+        
+      </item>
+    
+  </channel>
+</rss>
