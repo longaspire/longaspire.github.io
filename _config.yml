@@ -1,0 +1,29 @@
+# Site settings
+title: Huan Li's Personal Page
+office_room: Selma Lagerløfs Vej 300, Aalborg University, 9220 Aalborg Øst, Denmark
+academic_email: lihuan@cs.aau.dk
+last_update: Nov. 2019
+
+description: > # this means to ignore newlines until "baseurl:"
+  Remember what should be remembered, and forget what should be forgotten. Alter what is changeable, and accept what is mutable. -- “The Catcher in the Rye”
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+# empty/~lihuan
+
+url: "https://longaspire.github.io" # the base hostname & protocol for your site
+# http://people.cs.aau.dk
+
+# twitter_username: xxx
+github_username: longaspire
+linkedin_username: lihuancs
+facebook_username: stevenhuanlee
+# feel free to add other links here; you will have to add the SVG icon in _layouts/footer.html
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
+
+# Other options
+permalink: post/:year/:month/:title

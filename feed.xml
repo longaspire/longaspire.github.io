@@ -6,9 +6,30 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Dec 2019 11:08:28 +0100</pubDate>
-    <lastBuildDate>Wed, 04 Dec 2019 11:08:28 +0100</lastBuildDate>
+    <pubDate>Wed, 18 Dec 2019 15:10:46 +0100</pubDate>
+    <lastBuildDate>Wed, 18 Dec 2019 15:10:46 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New ICDE paper accepted!</title>
+        <description>&lt;p&gt;I am happy to annouance that our research paper &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt; collaborated with Hong Kong Baptist University, Hong Kong Chinese University, and Monash University (Australia) has been accepted by ICDE 2020 as a poster paper.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The recent years have witnessed the growing popularity of indoor location-based services (LBS) in practice and research. Among others, indoor shortest path query (ISPQ) is of fundamental importance for indoor LBS. However, existing works on ISPQ ignore indoor temporal variations, e.g., the open and close times associated with entities like doors and rooms. In this paper, we define a new type of query called Indoor Temporal-variation aware Shortest Path Query (ITSPQ). It returns the valid shortest path based on the up-to-date indoor topology at the query time. A set of techniques is designed to answer ITSPQ efficiently. We design a graph structure (IT-Graph) that captures indoor temporal variations. To process ITSPQ using IT-Graph, we design two algorithms that check a door’s accessibility synchronously and asynchronously. Furthermore, we propose a novel index structure (IT-Index) that extends the state-of-the-art index significantly by storing dynamic door-to-door distances in a compact distance cube associated with tree nodes. When processing ITSPQ using IT-Index, we make use of the distance cube to avoid time-consuming indoor distance computation on-the-fly. We evaluate the proposed techniques using extensive experiments on synthetic and real data. The results show that our IT-Index based method is the most efficient for processing ITSPQ at a modest cost of index memory consumption.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We are looking forward to presenting our work at the conference!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Dec 2019 15:40:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2019/12/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2019/12/post-1</guid>
+        
+        
+        <category>paper</category>
+        
+      </item>
     
       <item>
         <title>New updates</title>
