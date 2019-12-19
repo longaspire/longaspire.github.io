@@ -4,10 +4,10 @@
     <title>Huan Li's Personal Page</title>
     <description>Remember what should be remembered, and forget what should be forgotten. Alter what is changeable, and accept what is mutable. -- “The Catcher in the Rye”
 </description>
-    <link>https://longaspire.github.io/</link>
-    <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Dec 2019 15:10:46 +0100</pubDate>
-    <lastBuildDate>Wed, 18 Dec 2019 15:10:46 +0100</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 Dec 2019 12:25:17 +0100</pubDate>
+    <lastBuildDate>Thu, 19 Dec 2019 12:25:17 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -23,8 +23,8 @@
 &lt;p&gt;We are looking forward to presenting our work at the conference!&lt;/p&gt;
 </description>
         <pubDate>Tue, 17 Dec 2019 15:40:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2019/12/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2019/12/post-1</guid>
+        <link>http://localhost:4000/post/2019/12/post-1</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2019/12/post-1</guid>
         
         
         <category>paper</category>
@@ -147,8 +147,8 @@ Gradients clipped at `10`.
 * 68.7 PPL on Penn TreeBank dataset using an ensemble of 38 **Large LSTM**s --&gt;
 </description>
         <pubDate>Sun, 10 Nov 2019 16:10:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2019/11/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2019/11/post-1</guid>
+        <link>http://localhost:4000/post/2019/11/post-1</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2019/11/post-1</guid>
         
         
         <category>personal information</category>
