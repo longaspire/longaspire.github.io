@@ -4,15 +4,89 @@
     <title>Huan Li's Personal Page</title>
     <description>Remember what should be remembered, and forget what should be forgotten. Alter what is changeable, and accept what is mutable. -- “The Catcher in the Rye”
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Dec 2019 12:25:17 +0100</pubDate>
-    <lastBuildDate>Thu, 19 Dec 2019 12:25:17 +0100</lastBuildDate>
+    <link>https://longaspire.github.io/</link>
+    <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 09 Jan 2020 11:19:59 +0100</pubDate>
+    <lastBuildDate>Thu, 09 Jan 2020 11:19:59 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
+        <title>Towards Ubiquitous Location Intelligence</title>
+        <description>&lt;p&gt;My research interest has been focused on &lt;em&gt;developing desirable and user-friendly Location-Based Services (LBS)&lt;/em&gt;. With the evolution of technology and the growth of my research experience, I gradually built my research architecture as presented below.&lt;/p&gt;
+
+&lt;div&gt;
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 600px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/location_intelligence.png&quot; alt=&quot;Architecture of My Research&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Architecture of My Research&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Towards ubiquitous location intelligence that makes everywhere of the physical world perceptible, computable, and serviceable, my research vision is to provide sustainable supports for location-dependent applications such as logistics, mobile health, transportation, and public resource planning.&lt;/p&gt;
+
+&lt;p&gt;The realization of ubiquitous location intelligence requires data with high availability, algorithms with high adaptability, and computing infrastructure with high flexibility. Hence, my research intersects the topics in the field of &lt;strong&gt;data-intensive systems, machine learning, and mobile computing&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In my research, the ubiquitousness of LBS relies on the pervasive IoT infrastructure. It provides multiple types of data such as locations, environmental information, user behaviors, and semantics. Therefore, how to effectively and efficiently manage these IoT data is an important part of my research. Secondly, how to combine semantics with location-relevant data to extract valuable knowledge is also worthy of study. Finally, how to precisely apply the extracted knowledge to user services and deal with feedbacks is an important problem for location intelligence.
+Corresponding to the above issues, my current research topics are categorized into three themes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;IoT Data Management&lt;/strong&gt; that deals with the data quality control, data organization and representation, and query processing for location-sensing data from IoT.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Queries over Uncertain Indoor Mobility Data&lt;/strong&gt;. Proper analysis of indoor mobility data can reveal great insights for intelligent decision making. For example, finding currently crowded regions in an airport helps eliminate security risks, and knowing the most popular semantic locations and routes in a mall enables efficient management of mall space. The biggest challenge in querying and analyzing indoor mobility data comes from the spatiotemporal uncertainty of the data. Traditional methods of modeling object movement in free spaces or road networks do not apply to the indoor topology. My research outcomes include the precise modeling of object movements over complex indoor topology and spatiotemporal uncertainty, and efficient indexing and search algorithms for density and flow queries.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Learning-based Cleansing for Wi-Fi Positioning Data&lt;/strong&gt; (Ongoing work). The mainstream indoor positioning technique is the fingerprinting method based on Wi-Fi signal strengths, but its accuracy is limited by the drastic fluctuation of signal propagation. Compared with the traditional methods that refine positioning data based object dynamics model, my research is dedicated to improving the availability of fingerprinting positioning data from the perspective of data cleansing. We have been working on unsupervised noise extraction and probabilistic modeling of indoor positioning procedure at both signal strength level and positioning result level.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Data Quality Control for Location-of-Things Data&lt;/strong&gt; (Ongoing work). Location-of-Things is an Internet-of-Things paradigm in which mobility data is being gathered, processed and transmitted among heterogeneous data nodes in a decentralized manner. Data quality control for Location-of-Things has become a prominent challenge as traditional techniques cannot cope with the decentralized characteristics of Location-of-Things. My current studies include the data quality modeling at decentralized nodes, quality-aware algorithms for resolving data heterogeneity and inconsistency, and task scheduling mechanism for data quality management in Location-of-Things.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Semantic-oriented Mobility Analytics&lt;/strong&gt; that incorporates internal or external semantics into the extraction and exploitation of mobility knowledge.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Semantic Annotation of Trajectory Data&lt;/strong&gt;. High-level mobility analytics applications have been in urgent need of a concise but semantics-oriented representation of trajectory data. Existing semantic annotation methods focus on outdoors and require extra knowledge such as POI category or human activity regularity. These conditions are difficult to meet in indoor venues with relatively small extents but complex topology. My research focuses on the annotation of indoor mobility semantics that describe an object’s mobility event (what) at a semantic region (where) during a time period (when). We have proposed a complete pipeline method including data cleansing, trajectory segmentation, semantic matching, and data complementing. At present, we are working on using probabilistic graphical models to learn the correlation between locations and events to improve the annotation accuracy.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Spatial-Semantic Fact Search&lt;/strong&gt; (Ongoing work). In location-based services such as POI recommendation and travel planning, user requests usually embody both spatial and semantic information. Traditional spatial-keyword query and semantic search techniques can hardly meet the new-emerging user needs: On the one hand, users prefer to express flexible semantics using natural language; on the other hand, users need more concise and rich query results rather than unstructured contents. To enable users to obtain location-relevant facts by natural language, my current study is dedicated to processing natural language spatial-semantic queries over complex knowledge graph.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Context-aware Computing&lt;/strong&gt; that provides smart mobility services to understand and respond to the user requests implicitly based on contextual information.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Vision-enhanced Localization&lt;/strong&gt;. Identifying the surroundings and displaying relevant information on the camera view provides immersive user interactions. Wireless positioning techniques have limited accuracy and cannot estimate the camera pose of device. Simultaneous localization and mapping (SLAM) techniques need a high cost of offline modeling and online matching, and cannot deal with dynamic scenes. My studies focus on the vision-enhanced localization that estimates a device’s precise position and camera pose simultaneously. In particular, we designed a metric learning algorithm that fuses Wi-Fi, compass and gyroscope data to index a visual scene consisting of a set of offline images. When an online query is issued, the fused data index helps quickly find the target visual key points, and subsequently the device position and camera pose are estimated precisely with visual geometry.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Context-based Indoor Routing&lt;/strong&gt;. Route planning is among the popular location-based services. Appropriate route planning based on the context can facilitate a huge number of people, especially when they have to go through large and/or unfamiliar environments such as shopping malls, railway stations, and airports. The context in indoor routing can be divided into environment-related (e.g., opening and closing of doors and corridors, traffic in the space), user-related (e.g., preferences, costs, and intermediate destinations), event-related (e.g., emergencies and power failure) and so on. My research focuses on modeling and management of complex contextual information, constructing efficient data structures and indexes based on indoor context, and designing efficient and effective routing algorithms.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Relationship of the themes&lt;/strong&gt;: &lt;em&gt;IoT Data Management&lt;/em&gt; provides platform supports for &lt;em&gt;Semantic-oriented Mobility Analytics&lt;/em&gt;, the intermediate services and &lt;em&gt;Context-aware Computing&lt;/em&gt;, the end-user services. In turn, the high-level information and knowledge obtained from the service side boost the management and exploitation of low-level IoT data at the platform side.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Dec 2019 10:20:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2019/12/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2019/12/post-2</guid>
+        
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
         <title>New ICDE paper accepted!</title>
-        <description>&lt;p&gt;I am happy to annouance that our research paper &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt; collaborated with Hong Kong Baptist University, Hong Kong Chinese University, and Monash University (Australia) has been accepted by ICDE 2020 as a poster paper.&lt;/p&gt;
+        <description>&lt;p&gt;I am happy to annouance that our research paper &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt; collaborated with Hong Kong Baptist University, Hong Kong Chinese University, and Monash University (Australia) has been accepted by ICDE 2020 as a short paper.&lt;/p&gt;
 
 &lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
 
@@ -23,8 +97,8 @@
 &lt;p&gt;We are looking forward to presenting our work at the conference!&lt;/p&gt;
 </description>
         <pubDate>Tue, 17 Dec 2019 15:40:00 +0100</pubDate>
-        <link>http://localhost:4000/post/2019/12/post-1</link>
-        <guid isPermaLink="true">http://localhost:4000/post/2019/12/post-1</guid>
+        <link>https://longaspire.github.io/post/2019/12/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2019/12/post-1</guid>
         
         
         <category>paper</category>
@@ -147,8 +221,8 @@ Gradients clipped at `10`.
 * 68.7 PPL on Penn TreeBank dataset using an ensemble of 38 **Large LSTM**s --&gt;
 </description>
         <pubDate>Sun, 10 Nov 2019 16:10:00 +0100</pubDate>
-        <link>http://localhost:4000/post/2019/11/post-1</link>
-        <guid isPermaLink="true">http://localhost:4000/post/2019/11/post-1</guid>
+        <link>https://longaspire.github.io/post/2019/11/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2019/11/post-1</guid>
         
         
         <category>personal information</category>
