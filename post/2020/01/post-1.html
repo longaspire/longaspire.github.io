@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="b7SMD20d4AzMfKHgolym7URGFijAaqJXJp_sSuHThjw"/>
 
-  <title>Huan Li's Personal Page | 404</title>
-  <meta name="description" content="Remember what should be remembered, and forget what should be forgotten. Alter what is changeable, and accept what is mutable. -- “The Catcher in the Rye”
-">
+  <title>Huan Li's Personal Page | New TDS paper accepted!</title>
+  <meta name="description" content="I am happy to announce that our research paper Towards Translating Raw Indoor Positioning Data into Mobility Semantics has been accepted by ACM Transactions ...">
   <link rel="shortcut icon" type="image/png" href="/images/icon.png">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://longaspire.github.io/404/">
+  <link rel="canonical" href="https://longaspire.github.io/post/2020/01/post-1">
   <link rel="alternate" type="application/rss+xml" title="Huan Li's Personal Page" href="https://longaspire.github.io/feed.xml" />
 <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
@@ -97,12 +96,28 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">404</h1>
+    <h1 class="post-title">New TDS paper accepted!</h1>
+    <p class="post-meta">Posted on January 21, 2020   
+
+  in
+  
+  <a href="/categories/#paper" title="paper">paper</a>
+  
+
+
+</p>
   </header>
 
   <article class="post-content">
-    <h1>Dude, we cannot find that page.</h1>
-<p><a href="/" title="Back to Home">Back To Home</a></p>
+    <p>I am happy to announce that our research paper <strong>Towards Translating Raw Indoor Positioning Data into Mobility Semantics</strong> has been accepted by ACM Transactions on Data Science.</p>
+
+<p>The abstract of this paper is as follows.</p>
+
+<blockquote>
+  <p>Indoor mobility analyses are increasingly interesting due to the rapid growth of raw indoor positioning data obtained from IoT infrastructure. However, high-level analyses are still in urgent need of a concise but semantics-oriented representation of the mobility implied by the raw data. This work studies the problem of translating raw indoor positioning data into mobility semantics that describe a moving object’s mobility event (What) someplace (Where) at some time (When). The problem is non-trivial mainly because of the inherent errors in the uncertain, discrete raw data. We propose a three-layer framework to tackle the problem. In the cleaning layer, we design a cleaning method that eliminates positioning data errors by considering indoor mobility constraints. In the annotation layer, we propose a split-and-match approach to annotate mobility semantics on the cleaned data. The approach first employs a density based splitting method to divide positioning sequences into split snippets according to underlying mobility events, followed by a semantic matching method that makes proper annotations for split snippets. In the complementing layer, we devise an inference method that makes use of the indoor topology and the mobility semantics already obtained to recover the missing mobility semantics. The extensive experiments demonstrate that our solution is efficient and effective on both real and synthetic data. For typical queries, our solution’s resultant mobility semantics lead to more precise answers but incur less execution time than alternatives.</p>
+</blockquote>
+
+<p>This paper is a followed-up work of our VLDB demonstration <a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=http%3A%2F%2Fwww.vldb.org%2Fpvldb%2Fvol11%2Fp1918-li.pdf" target="_blank">TRIPS</a>. Now you can find more details about this indoor semantic trajectory translation system.</p>
 
   </article>
 

@@ -6,9 +6,30 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Jan 2020 11:19:59 +0100</pubDate>
-    <lastBuildDate>Thu, 09 Jan 2020 11:19:59 +0100</lastBuildDate>
+    <pubDate>Wed, 22 Jan 2020 09:31:12 +0100</pubDate>
+    <lastBuildDate>Wed, 22 Jan 2020 09:31:12 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New TDS paper accepted!</title>
+        <description>&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Towards Translating Raw Indoor Positioning Data into Mobility Semantics&lt;/strong&gt; has been accepted by ACM Transactions on Data Science.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Indoor mobility analyses are increasingly interesting due to the rapid growth of raw indoor positioning data obtained from IoT infrastructure. However, high-level analyses are still in urgent need of a concise but semantics-oriented representation of the mobility implied by the raw data. This work studies the problem of translating raw indoor positioning data into mobility semantics that describe a moving object’s mobility event (What) someplace (Where) at some time (When). The problem is non-trivial mainly because of the inherent errors in the uncertain, discrete raw data. We propose a three-layer framework to tackle the problem. In the cleaning layer, we design a cleaning method that eliminates positioning data errors by considering indoor mobility constraints. In the annotation layer, we propose a split-and-match approach to annotate mobility semantics on the cleaned data. The approach first employs a density based splitting method to divide positioning sequences into split snippets according to underlying mobility events, followed by a semantic matching method that makes proper annotations for split snippets. In the complementing layer, we devise an inference method that makes use of the indoor topology and the mobility semantics already obtained to recover the missing mobility semantics. The extensive experiments demonstrate that our solution is efficient and effective on both real and synthetic data. For typical queries, our solution’s resultant mobility semantics lead to more precise answers but incur less execution time than alternatives.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This paper is a followed-up work of our VLDB demonstration &lt;a href=&quot;chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=http%3A%2F%2Fwww.vldb.org%2Fpvldb%2Fvol11%2Fp1918-li.pdf&quot; target=&quot;_blank&quot;&gt;TRIPS&lt;/a&gt;. Now you can find more details about this indoor semantic trajectory translation system.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Jan 2020 10:40:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2020/01/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/01/post-1</guid>
+        
+        
+        <category>paper</category>
+        
+      </item>
     
       <item>
         <title>Towards Ubiquitous Location Intelligence</title>
@@ -86,7 +107,7 @@ Corresponding to the above issues, my current research topics are categorized in
     
       <item>
         <title>New ICDE paper accepted!</title>
-        <description>&lt;p&gt;I am happy to annouance that our research paper &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt; collaborated with Hong Kong Baptist University, Hong Kong Chinese University, and Monash University (Australia) has been accepted by ICDE 2020 as a short paper.&lt;/p&gt;
+        <description>&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt; collaborated with Hong Kong Baptist University, Hong Kong Chinese University, and Monash University (Australia) has been accepted by ICDE 2020 as a short paper.&lt;/p&gt;
 
 &lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
 
