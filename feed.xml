@@ -6,9 +6,32 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jan 2020 15:52:06 +0100</pubDate>
-    <lastBuildDate>Tue, 28 Jan 2020 15:52:06 +0100</lastBuildDate>
+    <pubDate>Tue, 04 Feb 2020 11:42:44 +0100</pubDate>
+    <lastBuildDate>Tue, 04 Feb 2020 11:42:44 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Good News about my MSCA Proposal</title>
+        <description>&lt;p&gt;I am pleased to announce that my MSCA (Marie Skłodowska-Curie Actions) proposal &lt;strong&gt;MALOT: Managing Mobility Data Quality for Location of Things&lt;/strong&gt; hosted by Aalborg University has been approved.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the fundraising department of Aalborg University and my supervisors for their valuable suggestions on this work.&lt;/p&gt;
+
+&lt;p&gt;The abstract of the proposal is as follows.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Location of Things (LoT) is an Internet of Things paradigm for mobility analytics. In LoT, massive mobility data is being gathered, processed and transmitted among heterogeneous data nodes in a decentralized architecture. Thus, managing data quality for LoT has become a prominent challenge as traditional techniques cannot cope with the aforementioned characteristics of LoT. In our project MALOT, we aim at designing a set of new techniques to manage data quality for LoT effectively and efficiently. Specifically, MALOT includes 1) a core model for assessing mobility data quality at individual LoT nodes; 2) effective data enhancement algorithms based on the quality model for resolving data heterogeneity and inconsistency; (3) a task scheduling mechanism for improving overall efficiency of data quality management in LoT.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This fellowship will last for 24 months, focusing on resolving some open issues in management of Location of Things data.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Feb 2020 10:40:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2020/02/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/02/post-1</guid>
+        
+        
+        <category>funding</category>
+        
+      </item>
     
       <item>
         <title>New TDS paper accepted!</title>
