@@ -177,7 +177,7 @@ Word embedding weights were initialized from $$\mathcal{U}\left[-0.1,0.1\right]$
 * 3-layer AWD-LSTM with weight tying attained 57.3 PPL on PTB
 * 3-layer AWD-LSTM with weight tying and a continuous cache pointer attained 52.8 PPL on PTB -->
 
-<!-- Write your post content here in normal `markdown`. An example post is shown below for reference. 
+<!-- Write your post content here in normal `markdown`. An example post is shown below for reference.
 
 ### Introduction
 Regularization is an important step during the training of neural networks. It helps to generalize the model by reducing the possibility of overfitting the training data. There are several types of regularization techniques, with L2 , L1, elastic-net (linear combination of L2 and L1 regularization), dropout and drop-connect being the major ones. While L2, L1 and elastic-net regularization techniques work by constraining the trainable parameters (or *weights*) from attaining large values (so that no drastic changes in output are observed for slight changes in the input; or in other words, they prefer *diffused* weights rather than *peaked* ones), **dropout** and drop-connect work by averaging the task over a dynamically and randomly generated large *ensemble* of networks. These networks are obtained by randomly disconnecting neurons (*dropout*) or weights (*drop-connect*) from the original network so as to obtain a subnetwork on which the training process is carried out (although for $$\approx1$$ epoch for each, since the chance of the same subnetwork being generated again is very rare).

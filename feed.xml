@@ -6,9 +6,28 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Feb 2020 11:42:44 +0100</pubDate>
-    <lastBuildDate>Tue, 04 Feb 2020 11:42:44 +0100</lastBuildDate>
+    <pubDate>Fri, 07 Feb 2020 10:06:36 +0100</pubDate>
+    <lastBuildDate>Fri, 07 Feb 2020 10:06:36 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New ICDE paper accepted!</title>
+        <description>&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Indoor Mobility Semantics Annotation Using Coupled Conditional Markov Networks&lt;/strong&gt; collaborated with Zhejiang University (China) and Monash University (Australia) has been accepted by ICDE 2020 as a full paper.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Indoor mobility semantics analytics can greatly benefit many pertinent applications. Existing semantic annotation methods mainly focus on outdoor space and require extra knowledge such as POI category or human activity regularity. However, these conditions are difficult to meet in indoor venues with relatively small extents but complex topology. This work studies the annotation of indoor mobility semantics that describe an object’s mobility event (what) at a semantic indoor region (where) during a time period (when). A coupled conditional Markov network (C2MN) is proposed with a set of feature functions carefully designed by incorporating indoor topology and mobility behaviors. C2MN is able to capture probabilistic dependencies among positioning records, semantic regions, and mobility events jointly. Nevertheless, the correlation of regions and events hinders the parameters learning. Therefore, we devise an alternate learning algorithm to enable the parameter learning over correlated variables. The extensive experiments demonstrate that our C2MN-based semantic annotation is efficient and effective on both real and synthetic indoor mobility data.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper is a followed-up work of our VLDB demonstration &lt;a href=&quot;http://www.vldb.org/pvldb/vol11/p1918-li.pdf&quot; target=&quot;_blank&quot;&gt;TRIPS&lt;/a&gt;. We are looking forward to presenting our work at the conference!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Feb 2020 10:00:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2020/02/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/02/post-2</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
     
       <item>
         <title>Good News about my MSCA Proposal</title>
@@ -18,9 +37,7 @@
 
 &lt;p&gt;The abstract of the proposal is as follows.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Location of Things (LoT) is an Internet of Things paradigm for mobility analytics. In LoT, massive mobility data is being gathered, processed and transmitted among heterogeneous data nodes in a decentralized architecture. Thus, managing data quality for LoT has become a prominent challenge as traditional techniques cannot cope with the aforementioned characteristics of LoT. In our project MALOT, we aim at designing a set of new techniques to manage data quality for LoT effectively and efficiently. Specifically, MALOT includes 1) a core model for assessing mobility data quality at individual LoT nodes; 2) effective data enhancement algorithms based on the quality model for resolving data heterogeneity and inconsistency; (3) a task scheduling mechanism for improving overall efficiency of data quality management in LoT.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Location of Things (LoT) is an Internet of Things paradigm for mobility analytics. In LoT, massive mobility data is being gathered, processed and transmitted among heterogeneous data nodes in a decentralized architecture. Thus, managing data quality for LoT has become a prominent challenge as traditional techniques cannot cope with the aforementioned characteristics of LoT. In our project MALOT, we aim at designing a set of new techniques to manage data quality for LoT effectively and efficiently. Specifically, MALOT includes 1) a core model for assessing mobility data quality at individual LoT nodes; 2) effective data enhancement algorithms based on the quality model for resolving data heterogeneity and inconsistency; (3) a task scheduling mechanism for improving overall efficiency of data quality management in LoT.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;This fellowship will last for 24 months, focusing on resolving some open issues in management of Location of Things data.&lt;/p&gt;
 </description>
@@ -39,18 +56,16 @@
 
 &lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Indoor mobility analyses are increasingly interesting due to the rapid growth of raw indoor positioning data obtained from IoT infrastructure. However, high-level analyses are still in urgent need of a concise but semantics-oriented representation of the mobility implied by the raw data. This work studies the problem of translating raw indoor positioning data into mobility semantics that describe a moving object’s mobility event (What) someplace (Where) at some time (When). The problem is non-trivial mainly because of the inherent errors in the uncertain, discrete raw data. We propose a three-layer framework to tackle the problem. In the cleaning layer, we design a cleaning method that eliminates positioning data errors by considering indoor mobility constraints. In the annotation layer, we propose a split-and-match approach to annotate mobility semantics on the cleaned data. The approach first employs a density based splitting method to divide positioning sequences into split snippets according to underlying mobility events, followed by a semantic matching method that makes proper annotations for split snippets. In the complementing layer, we devise an inference method that makes use of the indoor topology and the mobility semantics already obtained to recover the missing mobility semantics. The extensive experiments demonstrate that our solution is efficient and effective on both real and synthetic data. For typical queries, our solution’s resultant mobility semantics lead to more precise answers but incur less execution time than alternatives.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Indoor mobility analyses are increasingly interesting due to the rapid growth of raw indoor positioning data obtained from IoT infrastructure. However, high-level analyses are still in urgent need of a concise but semantics-oriented representation of the mobility implied by the raw data. This work studies the problem of translating raw indoor positioning data into mobility semantics that describe a moving object’s mobility event (What) someplace (Where) at some time (When). The problem is non-trivial mainly because of the inherent errors in the uncertain, discrete raw data. We propose a three-layer framework to tackle the problem. In the cleaning layer, we design a cleaning method that eliminates positioning data errors by considering indoor mobility constraints. In the annotation layer, we propose a split-and-match approach to annotate mobility semantics on the cleaned data. The approach first employs a density based splitting method to divide positioning sequences into split snippets according to underlying mobility events, followed by a semantic matching method that makes proper annotations for split snippets. In the complementing layer, we devise an inference method that makes use of the indoor topology and the mobility semantics already obtained to recover the missing mobility semantics. The extensive experiments demonstrate that our solution is efficient and effective on both real and synthetic data. For typical queries, our solution’s resultant mobility semantics lead to more precise answers but incur less execution time than alternatives.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;This paper is a followed-up work of our VLDB demonstration &lt;a href=&quot;chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=http%3A%2F%2Fwww.vldb.org%2Fpvldb%2Fvol11%2Fp1918-li.pdf&quot; target=&quot;_blank&quot;&gt;TRIPS&lt;/a&gt;. Now you can find more details about this indoor semantic trajectory translation system.&lt;/p&gt;
+&lt;p&gt;This paper is a followed-up work of our VLDB demonstration &lt;a href=&quot;http://www.vldb.org/pvldb/vol11/p1918-li.pdf&quot; target=&quot;_blank&quot;&gt;TRIPS&lt;/a&gt;. Now you can find more details about this indoor semantic trajectory translation system.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Jan 2020 10:40:00 +0100</pubDate>
         <link>https://longaspire.github.io/post/2020/01/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/01/post-1</guid>
         
         
-        <category>paper</category>
+        <category>publication</category>
         
       </item>
     
@@ -134,9 +149,7 @@ Corresponding to the above issues, my current research topics are categorized in
 
 &lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;The recent years have witnessed the growing popularity of indoor location-based services (LBS) in practice and research. Among others, indoor shortest path query (ISPQ) is of fundamental importance for indoor LBS. However, existing works on ISPQ ignore indoor temporal variations, e.g., the open and close times associated with entities like doors and rooms. In this paper, we define a new type of query called Indoor Temporal-variation aware Shortest Path Query (ITSPQ). It returns the valid shortest path based on the up-to-date indoor topology at the query time. A set of techniques is designed to answer ITSPQ efficiently. We design a graph structure (IT-Graph) that captures indoor temporal variations. To process ITSPQ using IT-Graph, we design two algorithms that check a door’s accessibility synchronously and asynchronously. Furthermore, we propose a novel index structure (IT-Index) that extends the state-of-the-art index significantly by storing dynamic door-to-door distances in a compact distance cube associated with tree nodes. When processing ITSPQ using IT-Index, we make use of the distance cube to avoid time-consuming indoor distance computation on-the-fly. We evaluate the proposed techniques using extensive experiments on synthetic and real data. The results show that our IT-Index based method is the most efficient for processing ITSPQ at a modest cost of index memory consumption.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;The recent years have witnessed the growing popularity of indoor location-based services (LBS) in practice and research. Among others, indoor shortest path query (ISPQ) is of fundamental importance for indoor LBS. However, existing works on ISPQ ignore indoor temporal variations, e.g., the open and close times associated with entities like doors and rooms. In this paper, we define a new type of query called Indoor Temporal-variation aware Shortest Path Query (ITSPQ). It returns the valid shortest path based on the up-to-date indoor topology at the query time. A set of techniques is designed to answer ITSPQ efficiently. We design a graph structure (IT-Graph) that captures indoor temporal variations. To process ITSPQ using IT-Graph, we design two algorithms that check a door’s accessibility synchronously and asynchronously. Furthermore, we propose a novel index structure (IT-Index) that extends the state-of-the-art index significantly by storing dynamic door-to-door distances in a compact distance cube associated with tree nodes. When processing ITSPQ using IT-Index, we make use of the distance cube to avoid time-consuming indoor distance computation on-the-fly. We evaluate the proposed techniques using extensive experiments on synthetic and real data. The results show that our IT-Index based method is the most efficient for processing ITSPQ at a modest cost of index memory consumption.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;We are looking forward to presenting our work at the conference!&lt;/p&gt;
 </description>
@@ -145,7 +158,7 @@ Corresponding to the above issues, my current research topics are categorized in
         <guid isPermaLink="true">https://longaspire.github.io/post/2019/12/post-1</guid>
         
         
-        <category>paper</category>
+        <category>publication</category>
         
       </item>
     
@@ -219,7 +232,7 @@ Word embedding weights were initialized from $$\mathcal{U}\left[-0.1,0.1\right]$
 * 3-layer AWD-LSTM with weight tying attained 57.3 PPL on PTB
 * 3-layer AWD-LSTM with weight tying and a continuous cache pointer attained 52.8 PPL on PTB --&gt;
 
-&lt;!-- Write your post content here in normal `markdown`. An example post is shown below for reference. 
+&lt;!-- Write your post content here in normal `markdown`. An example post is shown below for reference.
 
 ### Introduction
 Regularization is an important step during the training of neural networks. It helps to generalize the model by reducing the possibility of overfitting the training data. There are several types of regularization techniques, with L2 , L1, elastic-net (linear combination of L2 and L1 regularization), dropout and drop-connect being the major ones. While L2, L1 and elastic-net regularization techniques work by constraining the trainable parameters (or *weights*) from attaining large values (so that no drastic changes in output are observed for slight changes in the input; or in other words, they prefer *diffused* weights rather than *peaked* ones), **dropout** and drop-connect work by averaging the task over a dynamically and randomly generated large *ensemble* of networks. These networks are obtained by randomly disconnecting neurons (*dropout*) or weights (*drop-connect*) from the original network so as to obtain a subnetwork on which the training process is carried out (although for $$\approx1$$ epoch for each, since the chance of the same subnetwork being generated again is very rare).
