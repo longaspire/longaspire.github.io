@@ -233,7 +233,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Opima", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.95em;
   line-height: 1.5;
   font-weight: 300;
@@ -314,7 +314,7 @@ code {
   font-size: 14px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #6455c9; }
+  background-color: #828282; }
 
 code {
   padding: 1px 5px; }
@@ -364,7 +364,7 @@ pre {
     fill: #828282; }
 
 /**
- * Color button 
+ * Color button
  */
 .color-button {
   background: #15122e;
