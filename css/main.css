@@ -237,7 +237,7 @@ body {
   font-size: 0.95em;
   line-height: 1.5;
   font-weight: 300;
-  color: #454545;
+  color: #333333;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
@@ -291,7 +291,10 @@ a {
   a:visited {
     /*    color: darken($brand-color, 15%); */ }
   a:hover {
-    color: #454545; }
+    color: #333333; }
+
+.home a {
+  text-shadow: 0 0 1px #ffffff, 0 0 1px #333333; }
 
 /**
  * Blockquotes
