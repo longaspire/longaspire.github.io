@@ -286,15 +286,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #211a52;
+  color: #15122e;
   text-decoration: none; }
   a:visited {
-    /*    color: darken($brand-color, 15%); */ }
+    /*    color: darken($blue-color-dark, 15%); */ }
   a:hover {
     color: #333333; }
 
 .home a {
-  text-shadow: 0 0 1px #ffffff, 0 0 1px #333333; }
+  text-shadow: 0 0 0px #ffffff, 0 0 1px #333333; }
 
 /**
  * Blockquotes
@@ -409,8 +409,12 @@ a.tosu {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  color: #424242;
   margin-left: -15px; }
+
+.footer-col-wrapper a {
+  color: #424242;
+  text-shadow: 0 0 1px #ffffff, 0 0 1px #424242; }
 
 .footer-col {
   float: left;
