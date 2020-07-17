@@ -6,9 +6,89 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Jul 2020 12:02:20 +0200</pubDate>
-    <lastBuildDate>Thu, 09 Jul 2020 12:02:20 +0200</lastBuildDate>
+    <pubDate>Fri, 17 Jul 2020 22:32:37 +0200</pubDate>
+    <lastBuildDate>Fri, 17 Jul 2020 22:32:37 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Information of DBU Course (Fall 2020)</title>
+        <description>&lt;h3 id=&quot;last-semester&quot;&gt;Last Semester&lt;/h3&gt;
+
+&lt;p&gt;Textbook: &lt;code class=&quot;highlighter-rouge&quot;&gt;Head First SQL&lt;/code&gt; (Lynn Beighley)&lt;/p&gt;
+
+&lt;p&gt;Content:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduction (today) + basic SQL statements&lt;/li&gt;
+  &lt;li&gt;SELECT, DELETE, UPDATE, NULL values&lt;/li&gt;
+  &lt;li&gt;Be normal&lt;/li&gt;
+  &lt;li&gt;ALTER, advanced UPDATE and SELECT&lt;/li&gt;
+  &lt;li&gt;Multiple tables, creating table from data, Cartesion joins&lt;/li&gt;
+  &lt;li&gt;Joins and subqueries&lt;/li&gt;
+  &lt;li&gt;More joins and set operators&lt;/li&gt;
+  &lt;li&gt;ER modeling&lt;/li&gt;
+  &lt;li&gt;Constraints, views, transactions, and security&lt;/li&gt;
+  &lt;li&gt;Database applications (1)&lt;/li&gt;
+  &lt;li&gt;Database applications (2), review, and information about the exam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Arrangement (except the first):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Exercises for the first half&lt;/li&gt;
+  &lt;li&gt;Lectures for the second half&lt;/li&gt;
+  &lt;li&gt;Exercises/lectures the same venue!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning Goal:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Professional terminology of the subject of database
+    &lt;ul&gt;
+      &lt;li&gt;Proper understanding and use of relevant terms&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Grasp of SQL statements
+    &lt;ul&gt;
+      &lt;li&gt;Use the right constructs and correct formulation (syntax) to solve practical problems.&lt;/li&gt;
+      &lt;li&gt;CRUD: Create/Read/Update/Delete data.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Be able to know/do good database design
+    &lt;ul&gt;
+      &lt;li&gt;What, how and why?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Database applications
+    &lt;ul&gt;
+      &lt;li&gt;Application development and tuning&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Database administration (a little)
+    &lt;ul&gt;
+      &lt;li&gt;How to share your data conveniently and safely?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Exam:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Open book, written exam&lt;/li&gt;
+  &lt;li&gt;Question types
+    &lt;ul&gt;
+      &lt;li&gt;Multiple choices&lt;/li&gt;
+      &lt;li&gt;Matching&lt;/li&gt;
+      &lt;li&gt;SQL writing&lt;/li&gt;
+      &lt;li&gt;ERD designing and table creating&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 12 Jul 2020 23:40:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/07/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-2</guid>
+        
+        
+        <category>teaching</category>
+        
+      </item>
     
       <item>
         <title>Teaching DBU Course (Fall 2020)</title>
@@ -237,25 +317,6 @@ Aalborg University recommends that everyone at the university follow the authori
         
         
         <category>funding</category>
-        
-      </item>
-    
-      <item>
-        <title>New TDS Paper Accepted!</title>
-        <description>&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Towards Translating Raw Indoor Positioning Data into Mobility Semantics&lt;/strong&gt; has been accepted by ACM Transactions on Data Science.&lt;/p&gt;
-
-&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Indoor mobility analyses are increasingly interesting due to the rapid growth of raw indoor positioning data obtained from IoT infrastructure. However, high-level analyses are still in urgent need of a concise but semantics-oriented representation of the mobility implied by the raw data. This work studies the problem of translating raw indoor positioning data into mobility semantics that describe a moving object’s mobility event (What) someplace (Where) at some time (When). The problem is non-trivial mainly because of the inherent errors in the uncertain, discrete raw data. We propose a three-layer framework to tackle the problem. In the cleaning layer, we design a cleaning method that eliminates positioning data errors by considering indoor mobility constraints. In the annotation layer, we propose a split-and-match approach to annotate mobility semantics on the cleaned data. The approach first employs a density based splitting method to divide positioning sequences into split snippets according to underlying mobility events, followed by a semantic matching method that makes proper annotations for split snippets. In the complementing layer, we devise an inference method that makes use of the indoor topology and the mobility semantics already obtained to recover the missing mobility semantics. The extensive experiments demonstrate that our solution is efficient and effective on both real and synthetic data. For typical queries, our solution’s resultant mobility semantics lead to more precise answers but incur less execution time than alternatives.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This paper is a followed-up work of our VLDB demonstration &lt;a href=&quot;http://www.vldb.org/pvldb/vol11/p1918-li.pdf&quot; target=&quot;_blank&quot;&gt;TRIPS&lt;/a&gt;. Now you can find more details about this indoor semantic trajectory translation system.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 21 Jan 2020 10:40:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2020/01/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2020/01/post-1</guid>
-        
-        
-        <category>publication</category>
         
       </item>
     

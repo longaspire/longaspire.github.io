@@ -293,8 +293,8 @@ a {
   a:hover {
     color: #333333; }
 
-.home a {
-  text-shadow: 0 0 0px #ffffff, 0 0 1px #333333; }
+#home-content a {
+  text-shadow: 0.2px 0.2px 0px #333333; }
 
 /**
  * Blockquotes
@@ -314,10 +314,12 @@ blockquote {
  */
 pre,
 code {
-  font-size: 14px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #828282; }
+  font-family: inherit;
+  color: #fdfdfd;
+  border-radius: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #211a52; }
 
 code {
   padding: 1px 5px; }
