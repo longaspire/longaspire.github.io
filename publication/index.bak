@@ -113,10 +113,10 @@
   </header>
 
   <article class="post-content">
-    <dl class="wp-caption alignright" style="max-width: 260px; text-align:left">
+    <dl id="" class="wp-caption alignright" style="max-width: 260px; text-align:left">
 <dt style="margin-left:10px; margin-right:10px; margin-top:5px;">
 <h1>Acknowledgements</h1>
-Huan would like to thank all his co-authors for their guide and inspiration.<p />
+Huan would like to thank all his co-authors for their guide and inspiration.<p/>
 <ul>
 	<li><a href="https://research.monash.edu/en/persons/aamir-cheema" target="_blank">Muhammad Aamir Cheema</a></li>
 	<li><a href="https://person.zju.edu.cn/en/0098112/887409.html" target="_blank">Gang Chen</a></li>
@@ -135,135 +135,157 @@ Huan would like to thank all his co-authors for their guide and inspiration.<p /
 </dt>
 </dl>
 
-<p>See my <b><a href="https://dblp.uni-trier.de/pers/hd/l/Li_0003:Huan" target="_blank">DBLP</a></b>, <b><a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ" target="_blank"> Google Scholar page </a></b>, <b><a href="https://vbn.aau.dk/en/persons/133422/publications/" target="_blank">VBN at AAU</a></b>, and <b><a href="http://orcid.org/0000-0003-0084-1662" target="_blank">ORCID</a></b>.</p>
+See my <b><a href="https://dblp.uni-trier.de/pers/hd/l/Li_0003:Huan" target="_blank">DBLP</a></b>, <b><a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ" target="_blank"> Google Scholar page </a></b>, <b><a href="https://vbn.aau.dk/en/persons/133422/publications/" target="_blank">VBN at AAU</a></b>, and <b><a href="http://orcid.org/0000-0003-0084-1662" target="_blank">ORCID</a></b>.
 
-<p>My recent research focuses on the <a>ubiquitous intelligence of location based services</a>, see my <b><a href="../post/2019/12/post-2.html">statement</a></b>.</p>
+My recent research focuses on the <a>ubiquitous intelligence of location based services</a>, see my <b><a href="../post/2019/12/post-2.html">statement</a></b>.
 
 <h2>Journals</h2>
 <ul>
 	<li>
-		Towards translating raw indoor positioning data into mobility semantics.<br />
-		<b>Huan Li</b>, Hua Lu*, Gang Chen, Ke Chen, Qinkuang Chen, and Lidan Shou.<br />
-		<i>ACM Transactions on Data Science (<b>TDS</b>), 35 pages, 2020.</i><br />
+		Towards translating raw indoor positioning data into mobility semantics.<br>
+		<b>Huan Li</b>, Hua Lu*, Gang Chen, Ke Chen, Qinkuang Chen, and Lidan Shou.<br>
+		<i>ACM Transactions on Data Science (<b>TDS</b>), 35 pages, 2020.</i><br>
 		<a href="semantic-trajectory/semTraj-indoor-TDS.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="semantic-trajectory/semTraj-indoor.pdf"><div class="color-button">REPORT</div></a>
 		<a href="#"><div class="color-button">DATASET</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		Finding most popular indoor semantic locations using uncertain mobility data.<br />
-		<b>Huan Li</b>, Hua Lu*, Lidan Shou, Gang Chen, and Ke Chen.<br />
-		<i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 31(11): 2108-2123, 2019.</i><br />
+		Finding most popular indoor semantic locations using uncertain mobility data.<br>
+		<b>Huan Li</b>, Hua Lu*, Lidan Shou, Gang Chen, and Ke Chen.<br>
+		<i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 31(11): 2108-2123, 2019.</i><br>
 		<a href="flow/indoor-popular-location-search-preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="#"><div class="color-button">DATASET</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		In search of indoor dense regions: An approach using indoor positioning data.<br />
-		<b>Huan Li</b>, Hua Lu*, Lidan Shou, Gang Chen, and Ke Chen.<br />
-		<i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 30(8): 1481-1495, 2018.</i><br />
+		In search of indoor dense regions: An approach using indoor positioning data.<br>
+		<b>Huan Li</b>, Hua Lu*, Lidan Shou, Gang Chen, and Ke Chen.<br>
+		<i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 30(8): 1481-1495, 2018.</i><br>
 		<a href="dense/indoor-dense-region-search-preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
-	</li><br />
+	</li><br>
 </ul>
 
 <h2>Conferences</h2>
 <ul>
 	<li>
-		An Experimental Analysis of Indoor Spatial Queries: Modeling, Indexing, and Processing.<br />
-		Tiantian Liu, <b>Huan Li</b>, Hua Lu, Muhammad Aamir Cheema, and Lidan Shou.<br />
-		<i>	arXiv:2010.03910, 29 pages, 2020.</i><br />
+		An Experimental Analysis of Indoor Spatial Queries: Modeling, Indexing, and Processing.<br>
+		Tiantian Liu, <b>Huan Li</b>, Hua Lu, Muhammad Aamir Cheema, and Lidan Shou.<br>
+		<i>	arXiv:2010.03910, 29 pages, 2020.</i><br>
 		<a href="https://arxiv.org/pdf/2010.03910" target="_blank"><div class="color-button">PDF &dagger;</div></a>
 		<a href="https://github.com/indoorLBS/ISQEA" target="_blank"><div class="color-button">CODE</div></a>
 		<!-- <a href="#"><div class="color-button">VIDEO</div></a> -->
-	</li><br />
+	</li><br>
 	<li>
-		Indoor mobility semantics annotation using coupled conditional Markov networks.<br />
-		<b>Huan Li</b>, Hua Lu, Muhammad Aamir Cheema, Lidan Shou, and Gang Chen.<br />
-		<i>Proceedings of the 36th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 1441-1452, 2020.</i><br />
+		Indoor mobility semantics annotation using coupled conditional Markov networks.<br>
+		<b>Huan Li</b>, Hua Lu, Muhammad Aamir Cheema, Lidan Shou, and Gang Chen.<br>
+		<i>Proceedings of the 36th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 1441-1452, 2020.</i><br>
 		<a href="semantic-trajectory/annotation_icde_preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="semantic-trajectory/739_ICDE_Li_IndSemTraj.pdf"><div class="color-button">SLIDES</div></a>
 		<!-- <a href="#"><div class="color-button">VIDEO</div></a> -->
-	</li><br />
+	</li><br>
 	<li>
-		Indoor top-k keyword-aware routing query.<br />
-		Zijin Feng, Tiantian Liu, <b>Huan Li</b>, Hua Lu, Lidan Shou, and Jianliang Xu.<br />
-		<i>Proceedings of the 36th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 1213-1224, 2020.</i><br />
+		Indoor top-k keyword-aware routing query.<br>
+		Zijin Feng, Tiantian Liu, <b>Huan Li</b>, Hua Lu, Lidan Shou, and Jianliang Xu.<br>
+		<i>Proceedings of the 36th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 1213-1224, 2020.</i><br>
 		<a href="ikrq/IKRQ-preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="ikrq/355_ICDE_Feng_IKRQ.pdf"><div class="color-button">SLIDES</div></a>
 		<a href="ikrq/poster-IKRQ.pdf"><div class="color-button">POSTER</div></a>
 		<!-- <a href="#"><div class="color-button">VIDEO</div></a> -->
 		<a href="https://longaspire.github.io/s/hkdata.html" target="_blank"><div class="color-button">DATASET</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		Shortest path queries for indoor venues with temporal variations.<br />
-		Tiantian Liu, Zijin Feng, <b>Huan Li</b>, Hua Lu, Muhammad Aamir Cheema, Hong Cheng, and Jianliang Xu.<br />
-		<i>Proceedings of the 36th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 2014-2017, 2020. (Short Paper)</i><br />
+		Shortest path queries for indoor venues with temporal variations.<br>
+		Tiantian Liu, Zijin Feng, <b>Huan Li</b>, Hua Lu, Muhammad Aamir Cheema, Hong Cheng, and Jianliang Xu.<br>
+		<i>Proceedings of the 36th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 2014-2017, 2020. (Short Paper)</i><br>
 		<a href="itspq/ITSPQ-short-preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="itspq/751_ICDE_Liu_ITSPQ.pdf"><div class="color-button">POSTER</div></a>
 		<!-- <a href="itspq/751_ICDE_Liu_ITSPQ.mp4"><div class="color-button">VIDEO</div></a> -->
 		<a href="#"><div class="color-button">CODE</div></a>
-	</li><br />
+	</li><br>
 </ul>
 
 <h2>Demos and Posters</h2>
 <ul>
 	<li>
-		Finding most popular indoor semantic locations using uncertain mobility data.<br />
-		<b>Huan Li</b>, Hua Lu, Lidan Shou, Gang Chen, and Ke Chen.<br />
-		<i>Proceedings of the 35th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 2139-2140, 2019.</i><br />
+		Finding most popular indoor semantic locations using uncertain mobility data.<br>
+		<b>Huan Li</b>, Hua Lu, Lidan Shou, Gang Chen, and Ke Chen.<br>
+		<i>Proceedings of the 35th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 2139-2140, 2019.</i><br>
 		<a href="flow/indoor-popular-location-search-ea-preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="flow/poster-flow.pdf"><div class="color-button">POSTER</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		In search of indoor dense regions: An approach using indoor positioning data.<br />
-		<b>Huan Li</b>, Hua Lu, Lidan Shou, Gang Chen, and Ke Chen.<br />
-		<i>Proceedings of the 35th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 2127-2128, 2019.</i><br />
+		In search of indoor dense regions: An approach using indoor positioning data.<br>
+		<b>Huan Li</b>, Hua Lu, Lidan Shou, Gang Chen, and Ke Chen.<br>
+		<i>Proceedings of the 35th IEEE International Conference on Data Engineering (<b>ICDE</b>), pp. 2127-2128, 2019.</i><br>
 		<a href="dense/indoor-dense-region-search-ea-preprint.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="dense/poster-dense.pdf"><div class="color-button">POSTER</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		TRIPS: A system for translating raw indoor positioning data into visual mobility semantics.<br />
-		<b>Huan Li</b>, Hua Lu, Feichao Shi, Gang Chen, Ke Chen, and Lidan Shou.<br />
-		<i>Proceedings of the 44th International Conference on Very Large Data Bases (<b>VLDB</b>), pp. 1918-1921, 2018.</i><br />
+		TRIPS: A system for translating raw indoor positioning data into visual mobility semantics.<br>
+		<b>Huan Li</b>, Hua Lu, Feichao Shi, Gang Chen, Ke Chen, and Lidan Shou.<br>
+		<i>Proceedings of the 44th International Conference on Very Large Data Bases (<b>VLDB</b>), pp. 1918-1921, 2018.</i><br>
 		<a href="http://www.vldb.org/pvldb/vol11/p1918-li.pdf"><div class="color-button">PDF</div></a><a href="trips/poster-trips.pdf"><div class="color-button">POSTER</div></a><a href="https://www.youtube.com/watch?v=dERSHqp7lpM" target="_blank"><div class="color-button">VIDEO</div></a><a href="https://longaspire.github.io/trips/" target="_blank"><div class="color-button">CODE</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		Vita: A versatile toolkit for generating indoor mobility data for real-world buildings.<br />
-		<b>Huan Li</b>, Hua Lu, Xin Chen, Gang Chen, Ke Chen, and Lidan Shou.<br />
-		<i>Proceedings of the 42nd International Conference on Very Large Data Bases (<b>VLDB</b>), pp. 1453-1456, 2016.</i><br />
+		Vita: A versatile toolkit for generating indoor mobility data for real-world buildings.<br>
+		<b>Huan Li</b>, Hua Lu, Xin Chen, Gang Chen, Ke Chen, and Lidan Shou.<br>
+		<i>Proceedings of the 42nd International Conference on Very Large Data Bases (<b>VLDB</b>), pp. 1453-1456, 2016.</i><br>
 		<a href="http://www.vldb.org/pvldb/vol9/p1453-li.pdf"><div class="color-button">PDF</div></a><a href="vita/poster-vita.pdf"><div class="color-button">POSTER</div></a><a href="https://www.youtube.com/watch?v=jm88ZodpyPc" target="_blank"><div class="color-button">VIDEO</div></a><a href="https://longaspire.github.io/vita/" target="_blank"><div class="color-button">CODE</div></a>
-	</li><br />
+	</li><br>
 	<li>
-		E2C2: Efficient and effective camera calibration in indoor environments.<br />
-		<b>Huan Li</b>, Pai Peng, Hua Lu, Lidan Shou, Ke Chen, and Gang Chen.<br />
-		<i>Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing (<b>Ubicomp</b>), pp. 9-12, 2015.</i><br />
+		E2C2: Efficient and effective camera calibration in indoor environments.<br>
+		<b>Huan Li</b>, Pai Peng, Hua Lu, Lidan Shou, Ke Chen, and Gang Chen.<br>
+		<i>Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing (<b>Ubicomp</b>), pp. 9-12, 2015.</i><br>
 		<a href="e2c2/e2c2.pdf"><div class="color-button">PDF &dagger;</div></a>
 		<a href="e2c2/slides_e2c2.pdf"><div class="color-button">SLIDES</div></a>
 		<a href="e2c2/poster-e2c2.pdf"><div class="color-button">POSTER</div></a><a href="https://www.youtube.com/watch?v=zgyARWdUkOE" target="_blank"><div class="color-button">VIDEO</div></a>
-	</li><br />
+	</li><br>
+</ul>
+
+<h2>Patents</h2>
+<ul>
+	<li>
+		Indoor semantic trajectory labeling and complementing method in low-sampling positioning environment.<br>
+		Lidan Shou, <b>Huan Li</b>, Ke Chen, Xinyuan Luo, Gang Chen, Dawei Jiang, and Tianlei Hu.<br>
+		<i>CN201810778020.X, published on 11 Jan, 2019.</i><br>
+		<a href="patent/CN201810778020.X.pdf"><div class="color-button">FULL TEXT</div></a>
+	</li><br>
+	<li>
+		An approximate method for searching check-in users with non-real-time positioning data.<br>
+		Ke Chen, <b>Huan Li</b>, Lidan Shou, Xinyuan Luo, Gang Chen, Dawei Jiang, and Sai Wu.<br>
+		<i>CN201810778007.4, published on 30 Nov, 2018.</i><br>
+		<a href="patent/CN201810778007.4.pdf"><div class="color-button">FULL TEXT</div></a>
+	</li><br>
+	<li>
+		Indoor continuous flow monitoring method for probabilistic streaming mobility data.<br>
+		Gang Chen, <b>Huan Li</b>, Lidan Shou, Ke Chen, Xinyuan Luo, Sai Wu, and Tianlei Hu.<br>
+		<i>CN201810779777.0, published on 30 Nov, 2018.</i><br>
+		<a href="patent/CN201810779777.0.pdf"><div class="color-button">FULL TEXT</div></a>
+	</li><br>
 </ul>
 
 <h2>Lecture Notes</h2>
 <ul>
 	<li>
-		Literature repository for indoor data management.<br />
-		<b>Huan Li</b>. <i>March, 2017.</i><br />
+		Literature repository for indoor data management.<br>
+		<b>Huan Li</b>. <i>March, 2017.</i><br>
 		<a href="https://longaspire.github.io/intro2idm/" target="_blank"><div class="color-button">WEBSITE</div></a>
-	</li><br />
+	</li><br>
 </ul>
 
 <h2>Thesis</h2>
 <ul>
 	<li>
-		Uncertain indoor mobility data mining and analytics.<br />
-		Author: <b>Huan Li</b>; Advisors: Gang Chen and Lidan Shou.<br />
-		<i>April, 2018.</i><br />
+		Uncertain indoor mobility data mining and analytics.<br>
+		Author: <b>Huan Li</b>; Advisors: Gang Chen and Lidan Shou.<br>
+		<i>April, 2018.</i><br>
 		<a href="thesis/zju_thesis_huan_li.pdf"><div class="color-button">PDF</div></a>
 		<a href="thesis/defend-20180607.pdf"><div class="color-button">SLIDES</div></a>
-	</li><br />
+	</li><br>
 </ul>
 
-<div align="right">
+<div align= "right">
 	*<i>corresponding author</i>
-	<br /><sup>&dagger;</sup><i>preprint version under OpenAccess protocol</i>
+	<br><sup>&dagger;</sup><i>preprint version under OpenAccess protocol</i>
 </div>
 
   </article>
