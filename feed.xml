@@ -6,9 +6,49 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Jan 2021 17:04:45 +0100</pubDate>
-    <lastBuildDate>Mon, 04 Jan 2021 17:04:45 +0100</lastBuildDate>
+    <pubDate>Sat, 23 Jan 2021 11:34:11 +0800</pubDate>
+    <lastBuildDate>Sat, 23 Jan 2021 11:34:11 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New EDBT Paper Accepted!</title>
+        <description>&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Indoor Spatial Queries: Modeling, Indexing, and Processing&lt;/strong&gt; collaborated with Monash University (Australia) and Zhejiang University (China) has been accepted by EDBT 2021 as a full paper at the Experiments and Analysis track.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Indoor location-based services (LBS), such as POI search and routing, are often built on top of typical indoor spatial queries. To support such queries and indoor LBS, multiple techniques including model/indexes and search algorithms have been proposed. In this work, we conduct an extensive experimental study on existing proposals for indoor spatial queries. We survey five model/indexes, compare their algorithmic characteristics, and analyze their space and time complexities. We also design an in-depth benchmark with real and synthetic datasets, evaluation tasks, and performance metrics. Enabled by the benchmark, we obtain and report the performance results of all models/indexes under investigation. By analyzing the results, we summarize the pros and cons of all techniques and suggest the best choice for typical scenarios.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The code and data of this paper has been released at &lt;a href=&quot;https://github.com/indoorLBS/ISQEA&quot;&gt;Github&lt;/a&gt;. We are looking forward to presenting our work at the conference!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Jan 2021 05:00:00 +0800</pubDate>
+        <link>https://longaspire.github.io/post/2021/01/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2021/01/post-2</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
+    
+      <item>
+        <title>New Survey Paper Published!</title>
+        <description>&lt;p&gt;Our survey paper &lt;strong&gt;Impact of COVID-19 on Adoption of IoT in Different Sectors&lt;/strong&gt; is now released at &lt;a href=&quot;https://arxiv.org/abs/2101.07196&quot;&gt;arXiv&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;COVID-19 has disrupted normal life and has enforced a substantial change in the policies, priorities and activities of individuals, organisations and governments. These changes are proving to be a catalyst for technology and innovation. In this paper, we discuss the pandemic’s impact on the adoption of the Internet of Things (IoT) in various broad sectors namely healthcare, smart homes, smart buildings, smart cities, transportation and industrial IoT. Our analysis of this impact on IoT adoption is based on interviews with many industry experts, a thorough research literature review and a careful examination of reports from leading consulting firms. For each of these sectors, we also provide the details of recent initiatives taken in the wake of COVID-19. We also highlight challenges that need to be addressed and important research directions that will facilitate accelerated IoT adoption in these sectors.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This survey contains the most recent research papers about how IoT is incorporated into and affected by COVID-19 in vertical sectors such as healthcare, smart homes, smart buildings, smart cities, transportation, and industrial IoT.&lt;/p&gt;
+
+&lt;p&gt;This paper has been submitted to &lt;em&gt;IEEE Internet of Things Journal&lt;/em&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Jan 2021 05:00:00 +0800</pubDate>
+        <link>https://longaspire.github.io/post/2021/01/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2021/01/post-1</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
     
       <item>
         <title>Information of DBU Course (Fall 2020)</title>
@@ -81,7 +121,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 12 Jul 2020 23:40:00 +0200</pubDate>
+        <pubDate>Mon, 13 Jul 2020 05:40:00 +0800</pubDate>
         <link>https://longaspire.github.io/post/2020/07/post-2</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-2</guid>
         
@@ -96,7 +136,7 @@
 
 &lt;p&gt;We will announce more details soon.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 01 Jul 2020 02:00:00 +0200</pubDate>
+        <pubDate>Wed, 01 Jul 2020 08:00:00 +0800</pubDate>
         <link>https://longaspire.github.io/post/2020/07/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-1</guid>
         
@@ -113,9 +153,9 @@
 
 &lt;p&gt;Tiantian Liu is the main contributor of this project and I am an important participant. We will continue to maintain this project.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 30 Jun 2020 20:00:00 +0200</pubDate>
-        <link>https://longaspire.github.io/post/2020/06/post-4</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-4</guid>
+        <pubDate>Wed, 01 Jul 2020 02:00:00 +0800</pubDate>
+        <link>https://longaspire.github.io/post/2020/07/post-4</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-4</guid>
         
         
         <category>research</category>
@@ -130,9 +170,9 @@
 
 &lt;p&gt;We will continue to publish any news and results in this venue.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 30 Jun 2020 18:00:00 +0200</pubDate>
-        <link>https://longaspire.github.io/post/2020/06/post-3</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-3</guid>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
+        <link>https://longaspire.github.io/post/2020/07/post-3</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-3</guid>
         
         
         <category>funding</category>
@@ -145,7 +185,7 @@
 
 &lt;p&gt;You can find it at &lt;strong&gt;&lt;a href=&quot;https://msca-malot.github.io/&quot;&gt;https://msca-malot.github.io/&lt;/a&gt;&lt;/strong&gt;. We will continue to publish any news and results in this venue.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 30 Jun 2020 14:00:00 +0200</pubDate>
+        <pubDate>Tue, 30 Jun 2020 20:00:00 +0800</pubDate>
         <link>https://longaspire.github.io/post/2020/06/post-2</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-2</guid>
         
@@ -166,7 +206,7 @@
 
 &lt;p&gt;I will probably start my professorship from July or August this year.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 15 Jun 2020 14:00:00 +0200</pubDate>
+        <pubDate>Mon, 15 Jun 2020 20:00:00 +0800</pubDate>
         <link>https://longaspire.github.io/post/2020/06/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-1</guid>
         
@@ -242,7 +282,7 @@ outlined in grant agreement, for example attending training courses, conferences
 
 &lt;p&gt;Established as a not-for-profit organization in 2014, the Association offers opportunities for networking and peer exchange, an alumni directory, job offers, an events calendar, and other services of potential interest to IF researchers.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 08 Apr 2020 14:00:00 +0200</pubDate>
+        <pubDate>Wed, 08 Apr 2020 20:00:00 +0800</pubDate>
         <link>https://longaspire.github.io/post/2020/04/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/04/post-1</guid>
         
@@ -271,52 +311,12 @@ Aalborg University recommends that everyone at the university follow the authori
   &lt;li&gt;Be aware when in crowded places&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sun, 08 Mar 2020 22:00:00 +0100</pubDate>
+        <pubDate>Mon, 09 Mar 2020 05:00:00 +0800</pubDate>
         <link>https://longaspire.github.io/post/2020/03/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/03/post-1</guid>
         
         
         <category>personal information</category>
-        
-      </item>
-    
-      <item>
-        <title>New ICDE Paper Accepted!</title>
-        <description>&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Indoor Mobility Semantics Annotation Using Coupled Conditional Markov Networks&lt;/strong&gt; collaborated with Zhejiang University (China) and Monash University (Australia) has been accepted by ICDE 2020 as a full paper.&lt;/p&gt;
-
-&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Indoor mobility semantics analytics can greatly benefit many pertinent applications. Existing semantic annotation methods mainly focus on outdoor space and require extra knowledge such as POI category or human activity regularity. However, these conditions are difficult to meet in indoor venues with relatively small extents but complex topology. This work studies the annotation of indoor mobility semantics that describe an object’s mobility event (what) at a semantic indoor region (where) during a time period (when). A coupled conditional Markov network (C2MN) is proposed with a set of feature functions carefully designed by incorporating indoor topology and mobility behaviors. C2MN is able to capture probabilistic dependencies among positioning records, semantic regions, and mobility events jointly. Nevertheless, the correlation of regions and events hinders the parameters learning. Therefore, we devise an alternate learning algorithm to enable the parameter learning over correlated variables. The extensive experiments demonstrate that our C2MN-based semantic annotation is efficient and effective on both real and synthetic indoor mobility data.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This paper is a followed-up work of our VLDB demonstration &lt;a href=&quot;http://www.vldb.org/pvldb/vol11/p1918-li.pdf&quot; target=&quot;_blank&quot;&gt;TRIPS&lt;/a&gt;. We are looking forward to presenting our work at the conference!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 07 Feb 2020 10:00:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2020/02/post-2</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2020/02/post-2</guid>
-        
-        
-        <category>publication</category>
-        
-      </item>
-    
-      <item>
-        <title>Good News about My MSCA Proposal</title>
-        <description>&lt;p&gt;I am pleased to announce that my MSCA (Marie Skłodowska-Curie Actions) proposal &lt;strong&gt;MALOT: Managing Mobility Data Quality for Location of Things&lt;/strong&gt; hosted by Aalborg University has been approved.&lt;/p&gt;
-
-&lt;p&gt;Thanks to the fundraising department of Aalborg University and my supervisors for their valuable suggestions on this work.&lt;/p&gt;
-
-&lt;p&gt;The abstract of the proposal is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Location of Things (LoT) is an Internet of Things paradigm for mobility analytics. In LoT, massive mobility data is being gathered, processed and transmitted among heterogeneous data nodes in a decentralized architecture. Thus, managing data quality for LoT has become a prominent challenge as traditional techniques cannot cope with the aforementioned characteristics of LoT. In our project MALOT, we aim at designing a set of new techniques to manage data quality for LoT effectively and efficiently. Specifically, MALOT includes 1) a core model for assessing mobility data quality at individual LoT nodes; 2) effective data enhancement algorithms based on the quality model for resolving data heterogeneity and inconsistency; (3) a task scheduling mechanism for improving overall efficiency of data quality management in LoT.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This fellowship will last for 24 months, focusing on resolving some open issues in management of Location of Things data.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Feb 2020 10:40:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2020/02/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2020/02/post-1</guid>
-        
-        
-        <category>funding</category>
         
       </item>
     
