@@ -541,6 +541,17 @@ ul.listing li.listing-item a {
   font-weight: 400;
   font-family: 'Titillium Web', sans-serif; }
 
+#project-table {
+  border: 0;
+  margin-left: -10px;
+  border-collapse: separate;
+  border-spacing: 10px 5px; }
+
+#project-table img {
+  width: 120px;
+  align: center;
+  border: 1px solid; }
+
 /**
  * Syntax highlighting styles
  */
