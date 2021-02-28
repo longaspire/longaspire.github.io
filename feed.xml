@@ -6,8 +6,8 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Feb 2021 05:35:20 +0100</pubDate>
-    <lastBuildDate>Wed, 10 Feb 2021 05:35:20 +0100</lastBuildDate>
+    <pubDate>Sun, 28 Feb 2021 10:08:59 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Feb 2021 10:08:59 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -23,7 +23,7 @@
 
 &lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;As knowledge graphs (KGs) are increasingly acquiring spatial aspects, natural language spatial question answering (NLSQA) in KG is pertinent for location-based applications. The major challenges for NLSQA include data heterogeneity due to spatial and non-spatial aspects in KG, recognition of spatial constraints from questions, and integration of spatial closeness and semantic relevance in answers. In this work, we propose a framework for Spatial question Answering over Knowledge graph based on Embedding techniques (SAKE). For entities and predicates in KG, SAKE captures their spatial implications and semantics in spatial fingerprints and KG semantic embeddings, respectively. On top of the embeddings, a question answering process is trained offline, which mainly learns a similarity function to measure the joint spatial and semantic similarity between question and answer. The learned similarity function is employed by a candidate search algorithm to retrieve the answers for each online question. We design comprehensive experiments with real datasets to evaluate SAKE. The evaluation results verify SAKE’s effectiveness and efficiency..&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;As knowledge graphs (KGs) are increasingly acquiring spatial aspects, natural language spatial question answering (NLSQA) in KG is pertinent for location-based applications. The major challenges for NLSQA include data heterogeneity due to spatial and non-spatial aspects in KG, recognition of spatial constraints from questions, and integration of spatial closeness and semantic relevance in answers. In this work, we propose a framework for Spatial question Answering over Knowledge graph based on Embedding techniques (SAKE). For entities and predicates in KG, SAKE captures their spatial implications and semantics in spatial fingerprints and KG semantic embeddings, respectively. On top of the embeddings, a question answering process is trained offline, which mainly learns a similarity function to measure the joint spatial and semantic similarity between question and answer. The learned similarity function is employed by a candidate search algorithm to retrieve the answers for each online question. We design comprehensive experiments with real datasets to evaluate SAKE. The evaluation results verify SAKE’s effectiveness and efficiency.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;SAKE project aims to interpret and answer a very important branch of natural language questions, namely natural language spatial questions, for location-based services users.
 I feel happy to have this paper accepted by ICDE, because to me this is a very brave attempt to a totally new research topic in the past struggling year.&lt;/p&gt;
