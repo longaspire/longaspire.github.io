@@ -6,8 +6,8 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 May 2021 17:52:21 +0200</pubDate>
-    <lastBuildDate>Thu, 20 May 2021 17:52:21 +0200</lastBuildDate>
+    <pubDate>Mon, 05 Jul 2021 17:11:34 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Jul 2021 17:11:34 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -54,36 +54,6 @@
         <pubDate>Mon, 15 Mar 2021 19:00:00 +0100</pubDate>
         <link>https://longaspire.github.io/post/2021/03/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2021/03/post-1</guid>
-        
-        
-        <category>publication</category>
-        
-      </item>
-    
-      <item>
-        <title>New ICDE Paper Accepted!</title>
-        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/SAKE.png&quot; alt=&quot;SAKE Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;SAKE Project&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Our research paper &lt;strong&gt;SAKE: Spatial Question Answering over Knowledge Graph based on Embedding Techniques&lt;/strong&gt; collaborated with Zhejiang University (China) has been accepted by ICDE 2021 as a full paper.&lt;/p&gt;
-
-&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;As knowledge graphs (KGs) are increasingly acquiring spatial aspects, natural language spatial question answering (NLSQA) in KG is pertinent for location-based applications. The major challenges for NLSQA include data heterogeneity due to spatial and non-spatial aspects in KG, recognition of spatial constraints from questions, and integration of spatial closeness and semantic relevance in answers. In this work, we propose a framework for Spatial question Answering over Knowledge graph based on Embedding techniques (SAKE). For entities and predicates in KG, SAKE captures their spatial implications and semantics in spatial fingerprints and KG semantic embeddings, respectively. On top of the embeddings, a question answering process is trained offline, which mainly learns a similarity function to measure the joint spatial and semantic similarity between question and answer. The learned similarity function is employed by a candidate search algorithm to retrieve the answers for each online question. We design comprehensive experiments with real datasets to evaluate SAKE. The evaluation results verify SAKE’s effectiveness and efficiency.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;SAKE project aims to interpret and answer a very important branch of natural language questions, namely natural language spatial questions, for location-based services users.
-I feel happy to have this paper accepted by ICDE, because to me this is a very brave attempt to a totally new research topic in the past struggling year.&lt;/p&gt;
-
-&lt;p&gt;The data of this paper and a review of related works have been released at &lt;a href=&quot;https://github.com/sake-project&quot;&gt;Github&lt;/a&gt;.
-We are trying to make the code available soon. Looking forward to presenting our work at the conference!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 09 Feb 2021 19:00:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2021/02/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2021/02/post-1</guid>
         
         
         <category>publication</category>
@@ -306,6 +276,27 @@ We are trying to make the code available soon. Looking forward to presenting our
         
         
         <category>funding</category>
+        
+      </item>
+    
+      <item>
+        <title>Assistant Professorship at AAU</title>
+        <description>&lt;p&gt;After a period of seeking faculty positions at universities, I decided to accept the Assistant Professor offer from Aalborg University.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I have been working at AAU for a while and have developed a strong attachment to it. In addition, the offer from AAU provides a good integration with my MSCA fellowship such that I can still work on my fellowship while participating in the teaching activities as a faculty member.&lt;/p&gt;
+
+&lt;p&gt;During this period, I also participated in interviews with other institutions and met many excellent researchers. Although I did not choose to join them, I hope we will have cross in our future path, such as academic collaborations.&lt;/p&gt;
+
+&lt;p&gt;Working as an AP means that I will undertake more teaching tasks. As a green hand, I will strive to improve my lecturing skills and complete pedagogy training programs with passions.&lt;/p&gt;
+
+&lt;p&gt;I will probably start my professorship from July or August this year.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2020 14:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/06/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-1</guid>
+        
+        
+        <category>personal information</category>
         
       </item>
     
