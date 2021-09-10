@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Huan Li's Personal Page</title>
+    <description>Remember what should be remembered, and forget what should be forgotten. Alter what is changeable, and accept what is mutable. -- “The Catcher in the Rye”
+</description>
+    <link>https://longaspire.github.io/</link>
+    <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 10 Sep 2021 10:44:01 +0200</pubDate>
+    <lastBuildDate>Fri, 10 Sep 2021 10:44:01 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New TKDE Paper Accepted!</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Our research paper &lt;strong&gt;Towards Indoor Temporal-variation aware Shortest Path Query&lt;/strong&gt; collaborated with CUHK, Monash, and HKBU has been accepted by TKDE as a full paper.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The recent years have witnessed the growing popularity of indoor location-based services (LBS) in practice and research. Among others, indoor shortest path query (ISPQ) is of fundamental importance for indoor LBS. However, existing works on ISPQ ignore indoor temporal variations, e.g., the open and close times associated with entities like doors and rooms. In this paper, we define a new type of query called Indoor Temporal-variation aware Shortest Path Query (ITSPQ). It returns the valid shortest path based on the up-to-date indoor topology at the query time. A set of techniques is designed to answer ITSPQ efficiently. We design a graph structure (IT-Graph) that captures indoor temporal variations. To process ITSPQ using IT-Graph, we design two algorithms that check a door’s accessibility synchronously and asynchronously. Furthermore, we propose a novel index structure (IT-Index) that extends the state-of-the-art index significantly by storing dynamic door-to-door distances in a compact distance cube associated with tree nodes. When processing ITSPQ using IT-Index, we make use of the distance cube to avoid time-consuming indoor distance computation on-the-fly. We evaluate the proposed techniques using extensive experiments on synthetic and real data. The results show that our IT-Index based method is the most efficient for processing ITSPQ at a modest cost of index memory consumption.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper is an extension of our ICDE 2020 short paper entitled &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Mar 2021 19:00:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2021/03/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2021/03/post-1</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
+    
+      <item>
+        <title>New VLDB Paper Accepted!</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Our research paper &lt;strong&gt;Towards crowd-aware indoor path planning&lt;/strong&gt; collaborated with Monash University and Zhejiang University has been accepted by VLDB 2021 as a full paper.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Indoor venues accommodate many people who collectively form crowds. Such crowds in turn influence people’s routing choices, e.g., people may prefer to avoid crowded rooms when walking from A to B. This paper studies two types of crowd-aware indoor path planning queries. The Indoor Crowd-Aware Fastest Path Query (FPQ) finds a path with the shortest travel time in the presence of crowds, whereas the Indoor Least Crowded Path Query (LCPQ) finds a path encountering the least objects en route. To process the queries, we design a unified framework with three major components. First, an indoor crowd model organizes indoor topology and captures object flows between rooms. Second, a time-evolving population estimator derives room populations for a future timestamp to support crowd-aware routing cost computations in query processing. Third, two exact and two approximate query processing algorithms process each type of query. All algorithms are based on graph traversal over the indoor crowd model and use the same search framework with different strategies of updating the populations during the search process. All proposals are evaluated experimentally on synthetic and real data. The experimental results demonstrate the efficiency and scalability of our framework and query processing algorithms.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Mar 2021 19:00:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2021/03/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2021/03/post-1</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
+    
+      <item>
+        <title>New EDBT Paper Accepted!</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;I am happy to announce that our research paper &lt;strong&gt;Indoor Spatial Queries: Modeling, Indexing, and Processing&lt;/strong&gt; collaborated with Monash University (Australia) and Zhejiang University (China) has been accepted by EDBT 2021 as a full paper at the Experiments and Analysis track.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Indoor location-based services (LBS), such as POI search and routing, are often built on top of typical indoor spatial queries. To support such queries and indoor LBS, multiple techniques including model/indexes and search algorithms have been proposed. In this work, we conduct an extensive experimental study on existing proposals for indoor spatial queries. We survey five model/indexes, compare their algorithmic characteristics, and analyze their space and time complexities. We also design an in-depth benchmark with real and synthetic datasets, evaluation tasks, and performance metrics. Enabled by the benchmark, we obtain and report the performance results of all models/indexes under investigation. By analyzing the results, we summarize the pros and cons of all techniques and suggest the best choice for typical scenarios.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The code and data of this paper has been released at &lt;a href=&quot;https://github.com/indoorLBS/ISQEA&quot;&gt;Github&lt;/a&gt;. We are looking forward to presenting our work at the conference!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Jan 2021 22:00:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2021/01/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2021/01/post-2</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
+    
+      <item>
+        <title>New Survey Paper Published!</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/MALOT.png&quot; alt=&quot;MALOT Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;MALOT Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Our survey paper &lt;strong&gt;Impact of COVID-19 on Adoption of IoT in Different Sectors&lt;/strong&gt; is now released at &lt;a href=&quot;https://arxiv.org/abs/2101.07196&quot;&gt;arXiv&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;COVID-19 has disrupted normal life and has enforced a substantial change in the policies, priorities and activities of individuals, organisations and governments. These changes are proving to be a catalyst for technology and innovation. In this paper, we discuss the pandemic’s impact on the adoption of the Internet of Things (IoT) in various broad sectors namely healthcare, smart homes, smart buildings, smart cities, transportation and industrial IoT. Our analysis of this impact on IoT adoption is based on interviews with many industry experts, a thorough research literature review and a careful examination of reports from leading consulting firms. For each of these sectors, we also provide the details of recent initiatives taken in the wake of COVID-19. We also highlight challenges that need to be addressed and important research directions that will facilitate accelerated IoT adoption in these sectors.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This survey contains the most recent research papers about how IoT is incorporated into and affected by COVID-19 in vertical sectors such as healthcare, smart homes, smart buildings, smart cities, transportation, and industrial IoT.&lt;/p&gt;
+
+&lt;p&gt;This paper has been submitted to &lt;em&gt;IEEE Internet of Things Journal&lt;/em&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Jan 2021 22:00:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2021/01/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2021/01/post-1</guid>
+        
+        
+        <category>publication</category>
+        
+      </item>
+    
+      <item>
+        <title>Information of DBU Course (Fall 2020)</title>
+        <description>&lt;h3 id=&quot;last-semester&quot;&gt;Last Semester&lt;/h3&gt;
+
+&lt;p&gt;Textbook: &lt;code class=&quot;highlighter-rouge&quot;&gt;Head First SQL&lt;/code&gt; (Lynn Beighley)&lt;/p&gt;
+
+&lt;p&gt;Content:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduction (today) + basic SQL statements&lt;/li&gt;
+  &lt;li&gt;SELECT, DELETE, UPDATE, NULL values&lt;/li&gt;
+  &lt;li&gt;Be normal&lt;/li&gt;
+  &lt;li&gt;ALTER, advanced UPDATE and SELECT&lt;/li&gt;
+  &lt;li&gt;Multiple tables, creating table from data, Cartesion joins&lt;/li&gt;
+  &lt;li&gt;Joins and subqueries&lt;/li&gt;
+  &lt;li&gt;More joins and set operators&lt;/li&gt;
+  &lt;li&gt;ER modeling&lt;/li&gt;
+  &lt;li&gt;Constraints, views, transactions, and security&lt;/li&gt;
+  &lt;li&gt;Database applications (1)&lt;/li&gt;
+  &lt;li&gt;Database applications (2), review, and information about the exam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Arrangement (except the first):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Exercises for the first half&lt;/li&gt;
+  &lt;li&gt;Lectures for the second half&lt;/li&gt;
+  &lt;li&gt;Exercises/lectures the same venue!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning Goal:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Professional terminology of the subject of database
+    &lt;ul&gt;
+      &lt;li&gt;Proper understanding and use of relevant terms&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Grasp of SQL statements
+    &lt;ul&gt;
+      &lt;li&gt;Use the right constructs and correct formulation (syntax) to solve practical problems.&lt;/li&gt;
+      &lt;li&gt;CRUD: Create/Read/Update/Delete data.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Be able to know/do good database design
+    &lt;ul&gt;
+      &lt;li&gt;What, how and why?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Database applications
+    &lt;ul&gt;
+      &lt;li&gt;Application development and tuning&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Database administration (a little)
+    &lt;ul&gt;
+      &lt;li&gt;How to share your data conveniently and safely?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Exam:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Open book, written exam&lt;/li&gt;
+  &lt;li&gt;Question types
+    &lt;ul&gt;
+      &lt;li&gt;Multiple choices&lt;/li&gt;
+      &lt;li&gt;Matching&lt;/li&gt;
+      &lt;li&gt;SQL writing&lt;/li&gt;
+      &lt;li&gt;ERD designing and table creating&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 12 Jul 2020 23:40:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/07/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-2</guid>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Teaching DBU Course (Fall 2020)</title>
+        <description>&lt;p&gt;I will be a lecturer of AAU’s BAIT3 course &lt;strong&gt;Database Development (DBU)&lt;/strong&gt;. Danile Dell’Anglio will coordinate this course with me. The course consists of a series of lectures, larger exercises, and student presentation.&lt;/p&gt;
+
+&lt;p&gt;We will announce more details soon.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jul 2020 02:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/07/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/07/post-1</guid>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>ISQEA Project Open-sourced!</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;As a part of Prof. Hua Lu’s DFF project &lt;strong&gt;&lt;a href=&quot;https://indoorlbs.github.io/&quot;&gt;DATA MANAGEMENT FOUNDATIONS FOR INDOOR LBS&lt;/a&gt;&lt;/strong&gt;, the open-sourced project ISQEA (‘Experimental Analysis of Indoor Spatial Queries’) is released at Github &lt;strong&gt;&lt;a href=&quot;https://github.com/indoorLBS/ISQEA&quot;&gt;https://github.com/indoorLBS/ISQEA&lt;/a&gt;&lt;/strong&gt;. This project contains an in-depth benchmark with datasets, evaluation tasks, and performance metrics. The datasets consist of real and synthetic data characterized by distinctive indoor topology.&lt;/p&gt;
+
+&lt;p&gt;Along with this project, an experimental paper entitled ‘‘An Experimental Analysis of Indoor Spatial Queries: Modeling, Indexing, and Processing’’ has been submitted to IEEE Transactions on Knowledge and Data Engineering. This paper refers to an extensive experimental evaluation of five indoor space model/indexes that support four typical indoor spatial queries, namely range query (RQ), k nearest neighbor query (kNNQ), shortest path query (SPQ), and shortest distance query (SDQ). Our evaluation concerns the costs in model/index construction and query processing using a model/index.&lt;/p&gt;
+
+&lt;p&gt;Tiantian Liu is the main contributor of this project and I am an important participant. We will continue to maintain this project.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jun 2020 20:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/06/post-4</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-4</guid>
+        
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
+        <title>Indoor-LBS Project Site Online Now</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;The website of Prof. Hua Lu’s DFF project &lt;strong&gt;DATA MANAGEMENT FOUNDATIONS FOR INDOOR LBS&lt;/strong&gt; is currently online. You can find it at &lt;strong&gt;&lt;a href=&quot;https://indoorlbs.github.io/&quot;&gt;https://indoorlbs.github.io/&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The project is supported by Independent Research Fund Denmark (Grant No. 8022-00366B). Its hosts include Roskilde University and Aalborg University. I was a member of this project and will still work as a close collaborator.&lt;/p&gt;
+
+&lt;p&gt;We will continue to publish any news and results in this venue.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jun 2020 18:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/06/post-3</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-3</guid>
+        
+        
+        <category>funding</category>
+        
+      </item>
+    
+      <item>
+        <title>MSCA Project Site Online Now</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/MALOT.png&quot; alt=&quot;MALOT Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;MALOT Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;I am happy to let you know that a website of our EU MSCA project &lt;strong&gt;&lt;a href=&quot;https://cordis.europa.eu/project/id/882232&quot;&gt;MALOT&lt;/a&gt;&lt;/strong&gt; is released now.&lt;/p&gt;
+
+&lt;p&gt;You can find it at &lt;strong&gt;&lt;a href=&quot;https://msca-malot.github.io/&quot;&gt;https://msca-malot.github.io/&lt;/a&gt;&lt;/strong&gt;. We will continue to publish any news and results in this venue.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jun 2020 14:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/06/post-2</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-2</guid>
+        
+        
+        <category>funding</category>
+        
+      </item>
+    
+      <item>
+        <title>Assistant Professorship at AAU</title>
+        <description>&lt;p&gt;After a period of seeking faculty positions at universities, I decided to accept the Assistant Professor offer from Aalborg University.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I have been working at AAU for a while and have developed a strong attachment to it. In addition, the offer from AAU provides a good integration with my MSCA fellowship such that I can still work on my fellowship while participating in the teaching activities as a faculty member.&lt;/p&gt;
+
+&lt;p&gt;During this period, I also participated in interviews with other institutions and met many excellent researchers. Although I did not choose to join them, I hope we will have cross in our future path, such as academic collaborations.&lt;/p&gt;
+
+&lt;p&gt;Working as an AP means that I will undertake more teaching tasks. As a green hand, I will strive to improve my lecturing skills and complete pedagogy training programs with passions.&lt;/p&gt;
+
+&lt;p&gt;I will probably start my professorship from July or August this year.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2020 14:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/06/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-1</guid>
+        
+        
+        <category>personal information</category>
+        
+      </item>
+    
+  </channel>
+</rss>
