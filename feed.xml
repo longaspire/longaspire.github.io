@@ -6,59 +6,9 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Sep 2021 10:44:01 +0200</pubDate>
-    <lastBuildDate>Fri, 10 Sep 2021 10:44:01 +0200</lastBuildDate>
+    <pubDate>Wed, 22 Dec 2021 10:59:59 +0100</pubDate>
+    <lastBuildDate>Wed, 22 Dec 2021 10:59:59 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>New TKDE Paper Accepted!</title>
-        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Our research paper &lt;strong&gt;Towards Indoor Temporal-variation aware Shortest Path Query&lt;/strong&gt; collaborated with CUHK, Monash, and HKBU has been accepted by TKDE as a full paper.&lt;/p&gt;
-
-&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The recent years have witnessed the growing popularity of indoor location-based services (LBS) in practice and research. Among others, indoor shortest path query (ISPQ) is of fundamental importance for indoor LBS. However, existing works on ISPQ ignore indoor temporal variations, e.g., the open and close times associated with entities like doors and rooms. In this paper, we define a new type of query called Indoor Temporal-variation aware Shortest Path Query (ITSPQ). It returns the valid shortest path based on the up-to-date indoor topology at the query time. A set of techniques is designed to answer ITSPQ efficiently. We design a graph structure (IT-Graph) that captures indoor temporal variations. To process ITSPQ using IT-Graph, we design two algorithms that check a door’s accessibility synchronously and asynchronously. Furthermore, we propose a novel index structure (IT-Index) that extends the state-of-the-art index significantly by storing dynamic door-to-door distances in a compact distance cube associated with tree nodes. When processing ITSPQ using IT-Index, we make use of the distance cube to avoid time-consuming indoor distance computation on-the-fly. We evaluate the proposed techniques using extensive experiments on synthetic and real data. The results show that our IT-Index based method is the most efficient for processing ITSPQ at a modest cost of index memory consumption.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This paper is an extension of our ICDE 2020 short paper entitled &lt;strong&gt;Shortest Path Queries for Indoor Venues with Temporal Variations&lt;/strong&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 15 Mar 2021 19:00:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2021/03/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2021/03/post-1</guid>
-        
-        
-        <category>publication</category>
-        
-      </item>
-    
-      <item>
-        <title>New VLDB Paper Accepted!</title>
-        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/IndoorLBS.png&quot; alt=&quot;Indoor-LBS Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;Indoor-LBS Project&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Our research paper &lt;strong&gt;Towards crowd-aware indoor path planning&lt;/strong&gt; collaborated with Monash University and Zhejiang University has been accepted by VLDB 2021 as a full paper.&lt;/p&gt;
-
-&lt;p&gt;The abstract of this paper is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Indoor venues accommodate many people who collectively form crowds. Such crowds in turn influence people’s routing choices, e.g., people may prefer to avoid crowded rooms when walking from A to B. This paper studies two types of crowd-aware indoor path planning queries. The Indoor Crowd-Aware Fastest Path Query (FPQ) finds a path with the shortest travel time in the presence of crowds, whereas the Indoor Least Crowded Path Query (LCPQ) finds a path encountering the least objects en route. To process the queries, we design a unified framework with three major components. First, an indoor crowd model organizes indoor topology and captures object flows between rooms. Second, a time-evolving population estimator derives room populations for a future timestamp to support crowd-aware routing cost computations in query processing. Third, two exact and two approximate query processing algorithms process each type of query. All algorithms are based on graph traversal over the indoor crowd model and use the same search framework with different strategies of updating the populations during the search process. All proposals are evaluated experimentally on synthetic and real data. The experimental results demonstrate the efficiency and scalability of our framework and query processing algorithms.&lt;/em&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 15 Mar 2021 19:00:00 +0100</pubDate>
-        <link>https://longaspire.github.io/post/2021/03/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2021/03/post-1</guid>
-        
-        
-        <category>publication</category>
-        
-      </item>
     
       <item>
         <title>New EDBT Paper Accepted!</title>
@@ -294,6 +244,118 @@
         <pubDate>Mon, 15 Jun 2020 14:00:00 +0200</pubDate>
         <link>https://longaspire.github.io/post/2020/06/post-1</link>
         <guid isPermaLink="true">https://longaspire.github.io/post/2020/06/post-1</guid>
+        
+        
+        <category>personal information</category>
+        
+      </item>
+    
+      <item>
+        <title>Get to MSCA Implementation</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/MALOT.png&quot; alt=&quot;MALOT Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;MALOT Project&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;I am excited and looking forward to starting my MSCA project next week. I have read a documentation about how to implement the MSCA. I would like to share some useful information and also keep them as a memorandum.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-access&quot;&gt;Open Access&lt;/h3&gt;
+
+&lt;p&gt;There are two parts about Open Access (OA), namely OA for publication and OA for data.&lt;/p&gt;
+
+&lt;p&gt;For publication OA, all peer-reviewed publications in this project should be either green OA or golden OA.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Green OA means the beneficiaries can deposit the final peer-reviewed manuscript in a repository of their choice. Some good repository for MSCA could be https://www.openaire.eu/.&lt;/li&gt;
+  &lt;li&gt;Golden OA means the publication can be in open access journals, or in hybrid journals that both sell subscriptions and offer the option of making individual articles openly accessible.
+Links to the repositories in question must be provided in the system (Project Continuous Reporting).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For research data OA, one must submit a Data Management Plan within 6 months of the start of the action and the obligation to deposit the research data in a research data repository (e.g, Zenodo).&lt;/p&gt;
+
+&lt;h3 id=&quot;acknowledgement-of-eu-funding&quot;&gt;Acknowledgement of EU Funding&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No [number].&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;career-development-plan&quot;&gt;Career Development Plan&lt;/h3&gt;
+
+&lt;p&gt;The Plan should define the training requirements, taking into account the research objectives and subsequent career goals. No template is provided.&lt;/p&gt;
+
+&lt;h3 id=&quot;deliverables-to-report&quot;&gt;Deliverables to Report&lt;/h3&gt;
+
+&lt;p&gt;there are two types of deliverables which may have to be reported:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Data Management Plan: a document outlining how the research data will be handled during your project, and after it is completed. It describes what data will be collected / generated; what methodology and standards are used; whether and how this data will be shared and/or made open; and how it will be curated and preserved. The DMP must be submitted within the first 6 months of the project. A DMP template is available at&lt;/li&gt;
+  &lt;li&gt;Ethics requirements (if there were ethical issues)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;unit-costs&quot;&gt;Unit Costs&lt;/h3&gt;
+
+&lt;p&gt;Two parts, namely Researcher Costs and Institutional Costs.&lt;/p&gt;
+
+&lt;p&gt;For researcher costs:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Living Allowance.&lt;/li&gt;
+  &lt;li&gt;Mobility Allowance. It is intended to cover the costs associated with the fact that you have moved to a different country in order to take up your position. This sum will not be audited and is flexible.&lt;/li&gt;
+  &lt;li&gt;Family Allowance.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For institutional costs:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Research, Training and Network Costs. This amount is intended to cover the costs associated with your project as
+outlined in grant agreement, for example attending training courses, conferences, or when going on secondment. This should also  cover the cost of research (e.g. consumables), as appropriate, and can also be used to cover other related costs, such as visas.&lt;/li&gt;
+  &lt;li&gt;Management and Indirect Costs. This is for university.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;submission-of-reports&quot;&gt;Submission of Reports&lt;/h3&gt;
+
+&lt;p&gt;In the report, you will be required to report on the scientific progress of your project, as well as your training and transfer of knowledge activities, secondments (if any), career development, the scientific management of the project, dissemination and communication activities, and on the project’s overall impact.&lt;/p&gt;
+
+&lt;p&gt;Your report must be submitted within 60 days following the end date of the project. Submission of this report is a precondition for payment of the remaining amounts.&lt;/p&gt;
+
+&lt;h3 id=&quot;submission-of-questionnaires&quot;&gt;Submission of Questionnaires&lt;/h3&gt;
+
+&lt;p&gt;The funded researchers are requested to submit two questionnaires about their experience: one immediately following the completion of the project (“Evaluation Questionnaire”) and one two years later (“Follow-up Questionnaire”)&lt;/p&gt;
+
+&lt;h3 id=&quot;the-marie-curie-alumni-association&quot;&gt;The Marie Curie Alumni Association&lt;/h3&gt;
+
+&lt;p&gt;Established as a not-for-profit organization in 2014, the Association offers opportunities for networking and peer exchange, an alumni directory, job offers, an events calendar, and other services of potential interest to IF researchers.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Apr 2020 14:00:00 +0200</pubDate>
+        <link>https://longaspire.github.io/post/2020/04/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/04/post-1</guid>
+        
+        
+        <category>funding</category>
+        
+      </item>
+    
+      <item>
+        <title>Start Working from Home</title>
+        <description>&lt;p&gt;Due to the rapid development of &lt;a href=&quot;https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports&quot; target=&quot;_blank&quot;&gt;new coronavirus (COVID-19) epidemic&lt;/a&gt; in Denmark and in Aalborg, I was determined to start working from home from now on.
+This decision was made based on my prediction of continued growth in future cases of infection in North Jutland and my physical condition.&lt;/p&gt;
+
+&lt;p&gt;It is important to point out that I have always been optimistic about the control of the disease.
+However, as a normal person who has witnessed all the sad events in China and in other regions and now the appeasing policies in Europe, I should say currently I can only guarantee the health of myself, my family, and those around me by &lt;strong&gt;self-isolation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, please email or call me. In addition, I will participate in the teaching activities normally, but will refuse to contact &lt;strong&gt;any individuals who may be dangerous to my health&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+Aalborg University recommends that everyone at the university follow the authorities’ hygiene recommendations to prevent spreading the virus:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Wash your hands frequently and if possible use hand sanitizer&lt;/li&gt;
+  &lt;li&gt;Cough or sneeze in your sleeves - not your hands&lt;/li&gt;
+  &lt;li&gt;Avoid handshakes, hugs and kisses - limit physical contact&lt;/li&gt;
+  &lt;li&gt;Pay attention to cleaning - both at home and at work&lt;/li&gt;
+  &lt;li&gt;Be aware when in crowded places&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 08 Mar 2020 22:00:00 +0100</pubDate>
+        <link>https://longaspire.github.io/post/2020/03/post-1</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2020/03/post-1</guid>
         
         
         <category>personal information</category>
