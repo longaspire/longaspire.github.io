@@ -314,12 +314,13 @@ blockquote {
  */
 pre,
 code {
-  font-family: inherit;
-  color: #fdfdfd;
+  border: 2px solid #e8e8e8;
+  font-family: Consolas;
+  color: #211a52;
   border-radius: 2px;
   padding-left: 2px;
   padding-right: 2px;
-  background-color: #211a52; }
+  background-color: #f2f2f2; }
 
 code {
   padding: 1px 5px; }
