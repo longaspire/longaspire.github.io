@@ -6,8 +6,8 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Feb 2022 11:06:53 +0100</pubDate>
-    <lastBuildDate>Wed, 02 Feb 2022 11:06:53 +0100</lastBuildDate>
+    <pubDate>Mon, 07 Feb 2022 14:25:39 +0100</pubDate>
+    <lastBuildDate>Mon, 07 Feb 2022 14:25:39 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -22,7 +22,7 @@
 &lt;p&gt;Within the framework of our MALOT project, we have published two papers in prestigious venues.
 Both papers are the outcomes of our literature review on spatial IoT data quality.&lt;/p&gt;
 
-&lt;p&gt;In November 2021, our long survey paper entitled &lt;strong&gt;Spatial Data Quality in Internet of Things: Management, Exploitation, and Prospects&lt;/strong&gt; has been accepted by ACM Computing Surveys (IF: 10.3).
+&lt;p&gt;In November 2021, our long survey paper entitled &lt;strong&gt;Spatial Data Quality in the Internet of Things: Management, Exploitation, and Prospects&lt;/strong&gt; has been accepted by ACM Computing Surveys (IF: 10.3).
 The abstract of this paper is as follows.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;With the continued deployment of the Internet of Things (IoT), increasing volumes of devices are being deployed that emit massive spatially referenced data. Due in part to the dynamic, decentralized, and heterogeneous architecture of the IoT, the varying and often low quality of spatial IoT data (SID) presents challenges to applications built on top of this data. This survey aims to provide unique insight to practitioners who intend to develop IoT-enabled applications and to researchers who wish to conduct research that relates to data quality in the IoT setting. The survey offers an inventory analysis of major data quality dimensions in SID and covers significant data characteristics and associated quality considerations. The survey summarizes data quality related technologies from both task and technique perspectives. Organizing the technologies from the task perspective, it covers recent progress in SID quality management, encompassing location refinement, uncertainty elimination, outlier removal, fault correction, data integration, and data reduction; and it covers low-quality SID exploitation, encompassing querying, analysis, and decision-making techniques. Finally, the survey covers emerging trends and open issues concerning the quality of SID.&lt;/em&gt;&lt;/p&gt;
