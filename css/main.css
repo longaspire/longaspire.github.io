@@ -399,7 +399,7 @@ a.tosu {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 15px 0; }
 
 .footer-heading {
   font-size: 18px;
@@ -453,7 +453,7 @@ a.tosu {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 15px 0; }
 
 .page-heading {
   font-size: 20px; }
@@ -490,7 +490,8 @@ h1 {
       /*        font-size: 36px; */ } }
 
 .post-content {
-  margin-bottom: 30px; }
+  margin-bottom: 0;
+  /* $spacing-unit / 4 */ }
   .post-content h2 {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
@@ -542,7 +543,7 @@ ul.listing li.listing-item a {
   font-weight: 400;
   font-family: 'Titillium Web', sans-serif; }
 
-#project-table {
+#project-table, #organization-table {
   border: 0;
   margin-left: -10px;
   border-collapse: separate;
@@ -552,6 +553,17 @@ ul.listing li.listing-item a {
   width: 120px;
   align: center;
   border: 1px solid; }
+
+#organization-table {
+  border: 0;
+  margin-left: 0;
+  border-collapse: separate;
+  border-spacing: 10px 0; }
+
+#organization-table img {
+  width: 75px;
+  align: center;
+  border: 0.5px solid; }
 
 /**
  * Syntax highlighting styles
