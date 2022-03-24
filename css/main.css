@@ -386,6 +386,34 @@ pre {
   .color-button:hover {
     background: #211a52; }
 
+.color-button-type {
+  background: #003333;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 0px 5px 0 0;
+  cursor: pointer; }
+  .color-button-type:hover {
+    background: #006633; }
+
+.color-button-tag {
+  background: #990033;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 0px 5px 0 0;
+  cursor: pointer; }
+  .color-button-tag:hover {
+    background: #CC3333; }
+
 a.tosu {
   color: #b00000;
   background: #f5f5f5;
