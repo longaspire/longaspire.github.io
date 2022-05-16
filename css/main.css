@@ -582,6 +582,14 @@ ul.listing li.listing-item a {
   align: center;
   border: 1px solid; }
 
+#research {
+  margin-top: 4px; }
+  #research ul {
+    margin-bottom: 2px; }
+
+#quick-access {
+  margin-top: 12px; }
+
 #organization-table {
   border: 0;
   margin-left: 0;
