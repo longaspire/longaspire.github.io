@@ -6,9 +6,9 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Aug 2022 16:14:49 +0200</pubDate>
-    <lastBuildDate>Tue, 30 Aug 2022 16:14:49 +0200</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Tue, 18 Oct 2022 19:24:51 +0200</pubDate>
+    <lastBuildDate>Tue, 18 Oct 2022 19:24:51 +0200</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Spatial Data Quality in the Internet of Things</title>
@@ -71,7 +71,7 @@ The tutorial utilizes the structure of our survey paper and will be focusing on 
         <title>Information of DBU Course (Fall 2020)</title>
         <description>&lt;h3 id=&quot;last-semester&quot;&gt;Last Semester&lt;/h3&gt;
 
-&lt;p&gt;Textbook: &lt;code class=&quot;highlighter-rouge&quot;&gt;Head First SQL&lt;/code&gt; (Lynn Beighley)&lt;/p&gt;
+&lt;p&gt;Textbook: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Head First SQL&lt;/code&gt; (Lynn Beighley)&lt;/p&gt;
 
 &lt;p&gt;Content:&lt;/p&gt;
 &lt;ul&gt;

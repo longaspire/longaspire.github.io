@@ -154,14 +154,14 @@ The paper also introduces a new optimization algorithm, namely **Non-monotonical
     <span class="k">while</span> <span class="n">t</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
         <span class="c1"># `func_grad` computes gradient of `f` at `w`
 </span>        <span class="n">w</span> <span class="o">=</span> <span class="n">w</span> <span class="o">-</span> <span class="n">lr</span> <span class="o">*</span> <span class="n">func_grad</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
-        <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+        <span class="n">params</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
         <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="n">k</span><span class="o">%</span><span class="n">L</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="c1"># Compute model's perplexity for current parameters
 </span>            <span class="n">v</span> <span class="o">=</span> <span class="n">perplexity</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="n">n</span> <span class="ow">and</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="nb">min</span><span class="p">(</span><span class="n">logs</span><span class="p">[</span><span class="n">t</span><span class="o">-</span><span class="n">n</span><span class="p">:</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">]):</span>
                 <span class="n">T</span> <span class="o">=</span> <span class="n">k</span>
-            <span class="n">logs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+            <span class="n">logs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
             <span class="n">t</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="c1"># Return the average of best `k-T+1` parameters
 </span>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">):])</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>     </code></pre></figure>
