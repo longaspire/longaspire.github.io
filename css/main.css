@@ -3,7 +3,7 @@
  */
 .site-header {
   border-top: 0px solid #424242;
-  background-image: linear-gradient(#211a52, #15122e);
+  background-image: linear-gradient(#004c98, #00264b);
   box-shadow: 0px 5px 10px grey;
   position: relative; }
 
@@ -66,21 +66,21 @@
   letter-spacing: 0;
   line-height: 1.2em;
   padding: 4px 10px;
-  color: #15122e; }
+  color: #004c98; }
 
 .site-nav .sub-menu a:hover {
-  color: #211a52; }
+  color: #004c98; }
 
 .site-nav .sub-menu {
   z-index: 2147483647; }
 
 .site-nav .sub-menu li.current-menu-item > a {
-  border-left-color: #211a52;
-  border-right-color: #211a52;
+  border-left-color: #004c98;
+  border-right-color: #004c98;
   border-right: 0px; }
 
 .sub-menu {
-  border: 3px solid #15122e;
+  border: 3px solid #004c98;
   border-top: 20px solid transparent;
   /* bg and border colors set in header */
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
@@ -186,11 +186,11 @@
   .site-nav .menu li {
     display: block;
     margin: 0;
-    color: #15122e; }
+    color: #004c98; }
 
   .site-nav ul.menu a {
     background: #fff;
-    color: #15122e; }
+    color: #004c98; }
 
   .site-nav .menu > li {
     height: auto;
@@ -237,7 +237,7 @@ body {
   font-size: 0.95em;
   line-height: 1.5;
   font-weight: 300;
-  color: #333333;
+  color: #111111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
@@ -286,15 +286,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #15122e;
+  color: #004c98;
   text-decoration: none; }
   a:visited {
-    /*    color: darken($blue-color-dark, 15%); */ }
+    /*    color: darken($brand-color, 15%); */ }
   a:hover {
-    color: #333333; }
+    color: #00264b; }
 
 #home-content a {
-  text-shadow: 0.2px 0.2px 0px #333333; }
+  text-shadow: 0.2px 0.2px 0px #004c98; }
 
 /**
  * Blockquotes
@@ -316,7 +316,7 @@ pre,
 code {
   border: 2px solid #e8e8e8;
   font-family: Consolas;
-  color: #211a52;
+  color: #003F7E;
   border-radius: 2px;
   padding-left: 2px;
   padding-right: 2px;
@@ -373,7 +373,7 @@ pre {
  * Color button
  */
 .color-button {
-  background: #15122e;
+  background: #00264b;
   border-style: none;
   border-radius: 10px;
   color: white;
@@ -384,10 +384,10 @@ pre {
   margin: 0px 5px 0 0;
   cursor: pointer; }
   .color-button:hover {
-    background: #211a52; }
+    background: #004c98; }
 
 .color-button-type {
-  background: #003333;
+  background: #424242;
   border-style: none;
   border-radius: 10px;
   color: white;
@@ -398,10 +398,10 @@ pre {
   margin: 0px 5px 0 0;
   cursor: pointer; }
   .color-button-type:hover {
-    background: #006633; }
+    background: #828282; }
 
 .color-button-tag {
-  background: #990033;
+  background: #82171b;
   border-style: none;
   border-radius: 10px;
   color: white;
@@ -412,10 +412,10 @@ pre {
   margin: 0px 5px 0 0;
   cursor: pointer; }
   .color-button-tag:hover {
-    background: #CC3333; }
+    background: #d8272d; }
 
 a.tosu {
-  color: #b00000;
+  color: #82171b;
   background: #f5f5f5;
   text-decoration: none;
   padding: 2px;
@@ -440,11 +440,11 @@ a.tosu {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #424242;
+  color: #111111;
   margin-left: -15px; }
 
 .footer-col-wrapper a {
-  color: #424242; }
+  color: #111111; }
 
 .footer-col {
   float: left;
@@ -512,7 +512,7 @@ h1 {
   letter-spacing: -1px;
   line-height: 1;
   font-family: 'Titillium Web', sans-serif;
-  color: #15122e; }
+  color: #003F7E; }
   @media screen and (max-width: 950px) {
     h1 {
       /*        font-size: 36px; */ } }
@@ -567,7 +567,7 @@ ul.listing li.listing-item time {
   padding-right: 10px; }
 
 ul.listing li.listing-item a {
-  color: #15122e;
+  color: #004c98;
   font-weight: 400;
   font-family: 'Titillium Web', sans-serif; }
 
@@ -599,7 +599,8 @@ ul.listing li.listing-item a {
 #organization-table img {
   width: 75px;
   align: center;
-  border: 0.5px solid; }
+  border: 0.5px solid;
+  border-color: #828282; }
 
 /**
  * Syntax highlighting styles
