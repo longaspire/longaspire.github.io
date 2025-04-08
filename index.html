@@ -101,85 +101,158 @@
   </header>
 
   <article class="post-content">
-    <h1 class="post-title"><i class="far fa-grin-alt"></i> Hello</h1>
+    <style>
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  h1 i {
+    margin-right: 1rem;
+  }
+
+  #bio, #research, #quick-access {
+    margin-bottom: 3rem;
+  }
+
+  #organization-table img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+  }
+
+  #organization-table img:hover {
+    filter: grayscale(0%);
+  }
+
+  #bio img {
+    float: right;
+    margin: 0 0 0 0;
+  }
+</style>
+
+<h1><i class="far fa-grin-alt"></i> Hello</h1>
 <div id="home">
-<dl id="" class="wp-caption alignright" style="max-width: 200px">
+  
+
+  <div id="home-content">
+
+    <div id="bio">
+      <dl id="" class="wp-caption alignright" style="max-width: 200px">
 
 <dt><a href=""><img class="" src="/images/me_aau.jpg" alt="Aalborg, Denmark, Spring 2023" /></a></dt>
 
 <dd>Aalborg, Denmark, Spring 2023</dd>
 </dl>
 
+      <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+      I am a <a>ZJU 100-talent Program Professor [浙大百人计划研究员，博士生导师]</a> with the College of Computer Science and
+      Technology at Zhejiang University in China.
+      I am also an <a>NSFC Excellent Young Scientist (Overseas)</a> and an <a>EU Marie Curie Individual Fellow
+        [欧盟"玛丽·居里学者"]</a>.
+      Prior to my current position, I served as an Assistant Professor at the Department of Computer Science at Aalborg
+      University in Denmark from 2020 to 2022 and held the role of Senior Engineer at Ant Group (formerly Alipay) from
+      2018 to 2019.
+      <!-- In 2022, I was also a visiting scholar at the Database Group at SUSTech, China. -->
+      I earned my Ph.D. from Zhejiang University in 2018 and my B.Sc. from Sichuan University in China in 2012.
+    </div>
 
-<div id="home-content">
+    <div id="research">
+      <h2><i class="fas fa-flask"></i> Research</h2>
+      I am currently focused on research in <a>data-centric, resource-efficient, and scalable AI</a>, which I believe
+      are essential for advancing the adoption of AI in real-world applications.
+      My earlier work primarily focused on data management and AI techniques in the realm of time-series (TS) and
+      spatiotemporal (ST) data. For now, these interests have broadened to include relational data, unstructured data,
+      and multimodal data.
 
-<div id="bio">
-  I am a <a>ZJU100 Young Professor [浙大百人计划研究员，博士生导师]</a> with the College of Computer Science and Technology at Zhejiang University in China.
-  I am also an <a>EU Marie Curie Individual Fellow [欧盟"玛丽·居里学者"]</a>.
-  Prior to my current position, I served as an Assistant Professor at the Department of Computer Science at Aalborg University in Denmark from 2020 to 2022 and held the role of Senior Engineer at Ant Group (formerly Alipay) from 2018 to 2019.
-  <!-- In 2022, I was also a visiting scholar at the Database Group at SUSTech, China. -->
-  I earned my Ph.D. from Zhejiang University in 2018 and my B.Sc. from Sichuan University in China in 2012.
-</div>
-
-<div id="research">
-  I am currently focusing on building <a href="https://sudis-zju.github.io" target="_blank">Sustainable Data Intelligence and Data Systems [SuDIS]</a> that are Rapid, Reliable, Responsible, and Resilient. My work in this area encompasses various topics:
-  <ul>
-    <li> Data Quality for AI and AI for Data Quality
+      I'm lucky to work and grow with an amazing group of passionate and talented young people at Zhejiang University.
+      Our research group is called <a href="https://sudis-zju.github.io" target="_blank">Sustainable Data Intelligence
+        and Data Systems [SuDIS]</a>.
+      Lately, we've been focusing on pushing the boundaries in two key areas.
       <ul>
-        <li> learning-based cleansing and repairing of IoT data (VLDB'24, ICDE'23, SIGMOD'22); </li>
-        <li> analytics and learning with low-quality mobility data (TKDE'24, ICDE'24, TKDE'23, VLDB'22, VLDB'21, ICDE'20, TKDE'19, VLDB'18, TKDE'18, VLDB'16). </li>
+        <li> <b>Data + AI:</b>
+          <ul>
+            <li> data storage [<i>HyperMR, SIGMOD'25</i>], knowledge amalgamation [<i>BoKA, KDD'24</i>], data protection
+              [<i>PIECK, ICDE'24</i>], data selection [<i>CHASe, TKDE'25</i>], data augmentation and synthesis
+              [<i>CogSQL, AAAI'24</i>] for AI model training and serving; </li>
+            <li> AI-empowered data cleansing [<i>MPIN, PVLDB'24; BiSIM, ICDE'23</i>], data discovery [<i>nlcTables,
+                SIGIR'25</i>], and data ingestion [<i>Hippo, SIGMOD'25</i>]. </li>
+          </ul>
+        </li>
+        <li> <b>Efficient AI:</b>
+          <ul>
+            <li> lightweight AI models in edge computing [<i>LightCTS, SIGMOD'23</i>; <i>E2USD, WWW'24</i>; <i>ReCTSi,
+                KDD'24</i>; <i>LightCTS*, TKDE'24</i>] and federated learning [<i>LightTR, ICDE'24</i>; <i>FedBFPT,
+                IJCAI'23</i>]; </li>
+            <li> efficient LLM inference [<i>HMI, VLDBJ'25</i>; <i>Draft&Verify, ACL'24</i>] and fine-tuning [<i>LoRAM,
+                ICLR'25</i>].
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li> Computing in Mobile, Edge, and Decentralized Environments
+    </div>
+
+    <div id="quick-access">
+      <h2><i class="fas fa-link"></i> Quick Access</h2>
       <ul>
-        <li> lightweight time-series analytics (VLDB'25, TKDE'24, KDD'24, ICDE'24, WWW'24, SIGMOD'23); </li>
-        <li> resource-effient inference (VLDBJ'25, ICLR'25, SIGMOD'25, KDD'24, ACL'24); </li>
-        <li> decentralized data systems (TKDE'25, ICDE'24, IJCAI'23, CIKM'23, VLDB'22); </li>
-        <li> context-aware indoor positioning and routing (VLDB'22, ICDE'22, TKDE'21, ICDE'20, UbiComp'15). </li>
+        <li><i class="fas fa-code"></i> <a href="https://github.com/ryanlaics/RECTSI" target="_blank">Codebase</a>
+          <i>"ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and
+            Completeness-aware Attentions"</i> (KDD 2024).</li>
+        <li><i class="fas fa-code"></i> <a href="https://github.com/dilab-zju/self-speculative-decoding"
+            target="_blank">Codebase</a> <i>"Draft & Verify: Lossless Large Language Model Acceleration via
+            Self-Speculative Decoding"</i> (ACL 2024).</li>
+        <!-- <li><a href="/publication/sid/CSUR_2021_GreenOA.pdf" target="_blank">Just released paper</a> <i>"Eco-Friendly Route Planning Algorithms: Taxonomies, Literature Review and Future Directions"</i> accepted by CSUR.</li> -->
+        <li><i class="fas fa-book"></i> A systematic review on <a href="https://arxiv.org/abs/2407.21523"
+            target="_blank">Tabular Data Augmentation for Machine Learning</a>.</li>
+        <li><i class="fas fa-trophy"></i> Check out <a href="https://github.com/KevinZeng08/sigmod-2024-contest"
+            target="_blank">the Champion Solution</a> to <i>Hybrid Vector Search</i> (<a
+            href="http://sigmodcontest2024.eastus.cloudapp.azure.com/leaders.shtml" target="_blank">SIGMOD 2024
+            Programming Contest</a>), w. SUSTech DB Group.</li>
+        <li><i class="fas fa-code"></i> <a
+            href="https://paperswithcode.com/paper/missing-value-imputation-for-multi-attribute"
+            target="_blank">Codebase</a> <i>"Missing value imputation for multi-attribute sensor data streams via
+            message propagation"</i> (VLDB 2024).</li>
+        <li><i class="fas fa-code"></i> <a href="https://paperswithcode.com/paper/lightcts-a-lightweight-framework-for"
+            target="_blank">Codebase</a> <i>"LightCTS: A lightweight framework for correlated time series
+            forecasting"</i> (SIGMOD 2023).</li>
+        <!-- <li><a href="https://www.mdpi.com/journal/electronics/special_issues/05NJJ78X83" target="_blank">Call-For-Papers</a> <i>The Electronics Special Issue on "New Challenges in Cloud–Fog–Edge Computing and Mobile Intelligence"</i>.</li> -->
+        <li><i class="fas fa-chalkboard-teacher"></i> <a href="https://msca-malot.github.io/sigmod22-tutorial/"
+            target="_blank">SIGMOD 2022 Tutorial</a> <i>"Spatial data quality in the IoT era: Management and
+            exploitation"</i> (with B. Tang, H. Lu, M.A. Cheema, and C.S. Jensen).</li>
+        <li><i class="fas fa-file-alt"></i> <a href="/publication/sid/CSUR_2021_GreenOA.pdf" target="_blank">Author
+            Version</a> <i>"Spatial data quality in the Internet of Things: Management, exploitation, and prospects"</i>
+          (CSUR 2022).</li>
+        <li><i class="fas fa-tasks"></i> <a href="https://github.com/indoorLBS/ISQEA" target="_blank">Benchmark</a>
+          <i>"Indoor spatial queries: Modeling, indexing, and processing"</i> (EDBT 2020).</li>
+        <li><i class="fas fa-award"></i> <a href="https://msca-malot.github.io/" target="_blank">EU Marie
+            Skłodowska-Curie Individual Fellowship</a> <i>"MALOT: Managing Mobility Data Quality for Location of
+            Things</i>".</li>
+        <!-- <li><a href="https://github.com/longaspire/vita" target="_blank">Codebase</a> <i>"Vita: A versatile toolkit for generating indoor mobility data for real-world buildings"</i> (VLDB 2016).</li> -->
       </ul>
-    </li>
-  </ul>
-  Aside from my current research, I have an interest in other topics related to time-series (TS) and spatiotemporal (ST) data.
-</div>
+    </div>
 
-<div id="quick-access">
-  <b><i class="fas fa-link"></i> QUICK ACCESS</b>
-  <ul style="margin-top: 4px;">
-    <li><a href="
-    https://github.com/ryanlaics/RECTSI" target="_blank">Codebase</a> <i>"ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions"</i> (KDD 2024).</li>
-    <li><a href="
-    https://github.com/dilab-zju/self-speculative-decoding" target="_blank">Codebase</a> <i>"Draft & Verify: Lossless Large Language Model Acceleration via Self-Speculative Decoding"</i> (ACL 2024).</li>
-    <!-- <li><a href="/publication/sid/CSUR_2021_GreenOA.pdf" target="_blank">Just released paper</a> <i>"Eco-Friendly Route Planning Algorithms: Taxonomies, Literature Review and Future Directions"</i> accepted by CSUR.</li> -->
-    <li>A systematic review on <a href="https://arxiv.org/abs/2407.21523" target="_blank">Tabular Data Augmentation for Machine Learning</a>.</li>
-    <li>Check out <a href="https://github.com/KevinZeng08/sigmod-2024-contest" target="_blank">the Champion Solution</a> to <i>Hybrid Vector Search</i> (<a href="http://sigmodcontest2024.eastus.cloudapp.azure.com/leaders.shtml" target="_blank">SIGMOD 2024 Programming Contest</a>), w. SUSTech DB Group.</li>
-    <li><a href="https://paperswithcode.com/paper/missing-value-imputation-for-multi-attribute" target="_blank">Codebase</a> <i>"Missing value imputation for multi-attribute sensor data streams via message propagation"</i> (VLDB 2024).</li>
-    <li><a href="https://paperswithcode.com/paper/lightcts-a-lightweight-framework-for" target="_blank">Codebase</a> <i>"LightCTS: A lightweight framework for correlated time series forecasting"</i> (SIGMOD 2023).</li>
-    <!-- <li><a href="https://www.mdpi.com/journal/electronics/special_issues/05NJJ78X83" target="_blank">Call-For-Papers</a> <i>The Electronics Special Issue on "New Challenges in Cloud–Fog–Edge Computing and Mobile Intelligence"</i>.</li> -->
-    <li><a href="https://msca-malot.github.io/sigmod22-tutorial/" target="_blank">SIGMOD 2022 Tutorial</a> <i>"Spatial data quality in the IoT era: Management and exploitation"</i> (with B. Tang, H. Lu, M.A. Cheema, and C.S. Jensen).</li>
-    <li><a href="/publication/sid/CSUR_2021_GreenOA.pdf" target="_blank">Author Version</a> <i>"Spatial data quality in the Internet of Things: Management, exploitation, and prospects"</i> (CSUR 2022).</li>
-    <li><a href="https://github.com/indoorLBS/ISQEA" target="_blank">Benchmark</a> <i>"Indoor spatial queries: Modeling, indexing, and processing"</i> (EDBT 2020).</li>
-    <li><a href="https://msca-malot.github.io/" target="_blank">EU Marie Skłodowska-Curie Individual Fellowship</a> <i>"MALOT: Managing Mobility Data Quality for Location of Things</i>".</li>
-    <!-- <li><a href="https://github.com/longaspire/vita" target="_blank">Codebase</a> <i>"Vita: A versatile toolkit for generating indoor mobility data for real-world buildings"</i> (VLDB 2016).</li> -->
-  </ul>
-</div>
-
-<div id="organizations">
-  <table id="organization-table">
-      <tr>
+    <div id="organizations">
+      <table id="organization-table">
+        <tr>
           <td><a href="https://www.zju.edu.cn/" target="_blank"><img src="../images/ZJU.png" alt="ZJU" /></a></td>
           <td><a href="https://www.en.aau.dk/" target="_blank"><img src="../images/AAU.png" alt="AAU" /></a></td>
           <td><a href="https://www.daisy.aau.dk/" target="_blank"><img src="../images/daisy.png" alt="DAISY" /></a></td>
-          <td><a href="https://sudis-zju.github.io" target="_blank"><img src="../images/SuDIS.png" alt="SuDIS" /></a></td>
-          <td><a href="https://msca-malot.github.io/" target="_blank"><img src="../images/MALOT.png" alt="MALOT" /></a></td>
-          <td><a href="https://indoorlbs.github.io/" target="_blank"><img src="../images/IndoorLBS.png" alt="Indoor-LBS" /></a></td>
-      </tr>
-  </table>
-</div>
+          <td><a href="https://sudis-zju.github.io" target="_blank"><img src="../images/SuDIS.png" alt="SuDIS" /></a>
+          </td>
+          <td><a href="https://msca-malot.github.io/" target="_blank"><img src="../images/MALOT.png" alt="MALOT" /></a>
+          </td>
+          <td><a href="https://indoorlbs.github.io/" target="_blank"><img src="../images/IndoorLBS.png"
+                alt="Indoor-LBS" /></a></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
 
 </div>
-
-</div>
-
   </article>
 
 </div>
