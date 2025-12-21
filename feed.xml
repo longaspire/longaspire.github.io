@@ -6,9 +6,50 @@
 </description>
     <link>https://longaspire.github.io/</link>
     <atom:link href="https://longaspire.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Dec 2025 21:09:41 +0800</pubDate>
-    <lastBuildDate>Sat, 06 Dec 2025 21:09:41 +0800</lastBuildDate>
+    <pubDate>Sun, 21 Dec 2025 16:17:35 +0800</pubDate>
+    <lastBuildDate>Sun, 21 Dec 2025 16:17:35 +0800</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>The Art of Vibing: Reshaping My Website</title>
+        <description>&lt;p&gt;Today marks a unique milestone in the evolution of my personal website. In a single session lasting less than an hour, I completely overhauled the aesthetics and layout of my core listing pages—Services, Projects, and Teaching—using &lt;strong&gt;Antigravity&lt;/strong&gt; powered by &lt;strong&gt;Gemini Flash&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The process felt less like traditional “coding” and more like “vibing.” Instead of getting bogged down in the minutiae of CSS selectors or HTML nesting, I provided high-level aesthetic directions and semantic goals. Antigravity, with its deep understanding of my codebase and the lightning speed of Gemini Flash, translated those visions into precise, production-ready code.&lt;/p&gt;
+
+&lt;h3 id=&quot;key-highlights-of-the-update&quot;&gt;Key Highlights of the Update:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Unified Card-Based Design:&lt;/strong&gt; I transitioned the Services, Projects, and Teaching pages from standard lists to modern, high-density cards. Each card features a professional icon, subtle shadows, and a light blue background that feels both modern and professional.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dynamic 2x2 Grid for Teaching:&lt;/strong&gt; We pushed the limits of the layout by implementing a responsive 2x2 grid for the Teaching page. It balances course lists with active teaching photos, perfectly bottom-aligned for a crisp, organized look.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Aesthetic Consistency:&lt;/strong&gt; One of the biggest challenges in web design is maintaining a consistent “weight” across pages. We harmonized font weights, bullet styles (using clean circular bullets), and spacing to ensure a seamless transition as visitors navigate the site.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Micro-Refinements:&lt;/strong&gt; From italicizing nested project titles to ensuring semantic icon choices (like using a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fa-sitemap&lt;/code&gt; for leadership), the level of detail achieved in such a short window was remarkable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-vibing-workflow&quot;&gt;The “Vibing” Workflow&lt;/h3&gt;
+
+&lt;p&gt;What was truly impressive was the iterative nature of the work. I could simply say, &lt;em&gt;“This image overlaps with the text,”&lt;/em&gt; or &lt;em&gt;“Make it more compact,”&lt;/em&gt; and Antigravity would instantly propose and apply the fix. It’s a “vibe-centric” way of building—where the AI handles the heavy lifting of implementation while I focus on the creative direction and user experience.&lt;/p&gt;
+
+&lt;p&gt;The result is a website that feels alive—more responsive, more professional, and more “me.”&lt;/p&gt;
+
+&lt;p&gt;Feel free to explore the updated &lt;a href=&quot;/services/&quot;&gt;Services&lt;/a&gt;, &lt;a href=&quot;/projects/&quot;&gt;Projects&lt;/a&gt;, and &lt;a href=&quot;/teaching/&quot;&gt;Teaching&lt;/a&gt; pages to see the results of this AI-powered collaboration!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Most importantly, this blog itself is written by the Gemini Flash!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Special thanks to the Antigravity team at Google DeepMind for building such a powerful companion.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Dec 2025 18:15:00 +0800</pubDate>
+        <link>https://longaspire.github.io/post/2025/12/ai-driven-website-refresh</link>
+        <guid isPermaLink="true">https://longaspire.github.io/post/2025/12/ai-driven-website-refresh</guid>
+        
+        
+        <category>AI</category>
+        
+        <category>Web Design</category>
+        
+        <category>Personal</category>
+        
+      </item>
     
       <item>
         <title>A New Chapter in My Career</title>
@@ -278,89 +319,6 @@ The tutorial utilizes the structure of our survey paper and will be focusing on 
         
         
         <category>personal information</category>
-        
-      </item>
-    
-      <item>
-        <title>Get to MSCA Implementation</title>
-        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 200px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/MALOT.png&quot; alt=&quot;MALOT Project&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;MALOT Project&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;I am excited and looking forward to starting my MSCA project next week. I have read a documentation about how to implement the MSCA. I would like to share some useful information and also keep them as a memorandum.&lt;/p&gt;
-
-&lt;h3 id=&quot;open-access&quot;&gt;Open Access&lt;/h3&gt;
-
-&lt;p&gt;There are two parts about Open Access (OA), namely OA for publication and OA for data.&lt;/p&gt;
-
-&lt;p&gt;For publication OA, all peer-reviewed publications in this project should be either green OA or golden OA.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Green OA means the beneficiaries can deposit the final peer-reviewed manuscript in a repository of their choice. Some good repository for MSCA could be https://www.openaire.eu/.&lt;/li&gt;
-  &lt;li&gt;Golden OA means the publication can be in open access journals, or in hybrid journals that both sell subscriptions and offer the option of making individual articles openly accessible.
-Links to the repositories in question must be provided in the system (Project Continuous Reporting).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For research data OA, one must submit a Data Management Plan within 6 months of the start of the action and the obligation to deposit the research data in a research data repository (e.g, Zenodo).&lt;/p&gt;
-
-&lt;h3 id=&quot;acknowledgement-of-eu-funding&quot;&gt;Acknowledgement of EU Funding&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No [number].&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;career-development-plan&quot;&gt;Career Development Plan&lt;/h3&gt;
-
-&lt;p&gt;The Plan should define the training requirements, taking into account the research objectives and subsequent career goals. No template is provided.&lt;/p&gt;
-
-&lt;h3 id=&quot;deliverables-to-report&quot;&gt;Deliverables to Report&lt;/h3&gt;
-
-&lt;p&gt;there are two types of deliverables which may have to be reported:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Data Management Plan: a document outlining how the research data will be handled during your project, and after it is completed. It describes what data will be collected / generated; what methodology and standards are used; whether and how this data will be shared and/or made open; and how it will be curated and preserved. The DMP must be submitted within the first 6 months of the project. A DMP template is available at&lt;/li&gt;
-  &lt;li&gt;Ethics requirements (if there were ethical issues)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;unit-costs&quot;&gt;Unit Costs&lt;/h3&gt;
-
-&lt;p&gt;Two parts, namely Researcher Costs and Institutional Costs.&lt;/p&gt;
-
-&lt;p&gt;For researcher costs:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Living Allowance.&lt;/li&gt;
-  &lt;li&gt;Mobility Allowance. It is intended to cover the costs associated with the fact that you have moved to a different country in order to take up your position. This sum will not be audited and is flexible.&lt;/li&gt;
-  &lt;li&gt;Family Allowance.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;For institutional costs:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Research, Training and Network Costs. This amount is intended to cover the costs associated with your project as
-outlined in grant agreement, for example attending training courses, conferences, or when going on secondment. This should also  cover the cost of research (e.g. consumables), as appropriate, and can also be used to cover other related costs, such as visas.&lt;/li&gt;
-  &lt;li&gt;Management and Indirect Costs. This is for university.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;submission-of-reports&quot;&gt;Submission of Reports&lt;/h3&gt;
-
-&lt;p&gt;In the report, you will be required to report on the scientific progress of your project, as well as your training and transfer of knowledge activities, secondments (if any), career development, the scientific management of the project, dissemination and communication activities, and on the project’s overall impact.&lt;/p&gt;
-
-&lt;p&gt;Your report must be submitted within 60 days following the end date of the project. Submission of this report is a precondition for payment of the remaining amounts.&lt;/p&gt;
-
-&lt;h3 id=&quot;submission-of-questionnaires&quot;&gt;Submission of Questionnaires&lt;/h3&gt;
-
-&lt;p&gt;The funded researchers are requested to submit two questionnaires about their experience: one immediately following the completion of the project (“Evaluation Questionnaire”) and one two years later (“Follow-up Questionnaire”)&lt;/p&gt;
-
-&lt;h3 id=&quot;the-marie-curie-alumni-association&quot;&gt;The Marie Curie Alumni Association&lt;/h3&gt;
-
-&lt;p&gt;Established as a not-for-profit organization in 2014, the Association offers opportunities for networking and peer exchange, an alumni directory, job offers, an events calendar, and other services of potential interest to IF researchers.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Apr 2020 20:00:00 +0800</pubDate>
-        <link>https://longaspire.github.io/post/2020/04/post-1</link>
-        <guid isPermaLink="true">https://longaspire.github.io/post/2020/04/post-1</guid>
-        
-        
-        <category>funding</category>
         
       </item>
     

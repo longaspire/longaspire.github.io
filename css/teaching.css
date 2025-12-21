@@ -1,0 +1,126 @@
+/* teaching.css */
+
+.teaching-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.teaching-section {
+  padding: 12px 16px;
+  background-color: #f0f7ff;
+  border: 1px solid #dcebfa;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 63, 126, 0.03);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.teaching-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 63, 126, 0.08);
+  border-color: #003f7e;
+  background-color: #eaf4ff;
+}
+
+.teaching-section h2 {
+  color: #003f7e;
+  margin-top: 0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+  border-bottom: 1px solid #e1eaf3;
+  padding-bottom: 6px;
+}
+
+/* Photo style outside card */
+.teaching-photo-cell {
+  display: flex;
+  align-items: flex-end; /* Bottom align as requested */
+  justify-content: center;
+}
+
+.teaching-photo-cell .wp-caption {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.teaching-photo-cell img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.teaching-photo-cell .wp-caption dd {
+  background-color: transparent !important;
+  color: #666 !important;
+  font-size: 0.85rem !important;
+  font-style: italic;
+  padding: 0 !important;
+  margin-top: 8px !important;
+  text-align: center;
+}
+
+.teaching-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.teaching-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.teaching-list li ul li {
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.teaching-list.leadership-list li {
+  font-weight: 400;
+}
+
+.teaching-list > li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #003f7e;
+  font-size: 1.1rem;
+}
+
+.teaching-list li:last-child {
+  margin-bottom: 0;
+}
+
+.teaching-list li ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .teaching-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
