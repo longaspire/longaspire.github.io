@@ -16,6 +16,12 @@ h1 i {
   margin-bottom: 3rem;
 }
 
+#bio p, #research p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 #organizations {
   margin-top: 2rem;
   padding-top: 2rem;
@@ -61,11 +67,29 @@ h1 i {
   transform: scale(1.03);
 }
 
-#bio img {
+#bio .wp-caption {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 0 1rem 1.5rem !important; /* Move margin from img to wp-caption */
+  padding: 0 !important;
   float: right;
-  margin: 0 0 1rem 1.5rem;
+}
+
+#bio .wp-caption img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 !important; /* Remove individual img margin as it's now on wp-caption */
+}
+
+#bio .wp-caption dd {
+  background-color: transparent !important;
+  color: #666 !important;
+  font-size: 0.85rem !important;
+  font-style: italic;
+  padding: 0 !important;
+  margin-top: 8px !important;
+  text-align: center;
 }
 
 /* Research Areas Redesign */
@@ -225,17 +249,35 @@ h1 i {
     grid-template-columns: 1fr;
   }
   
-  #bio {
+  #bio, #research {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
 
-  #bio img {
-    float: none;
+  #bio p, #research p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  #bio a, #research a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: inline;
+  }
+
+  #bio .wp-caption {
+    float: none !important;
     order: -1; /* Image first on mobile */
-    margin: 0 auto 1.5rem auto;
-    width: 200px;
+    margin: 0 auto 1.5rem auto !important;
     max-width: 80%;
+  }
+
+  #bio .wp-caption img {
+    margin: 0 auto !important;
+    width: 200px;
+    max-width: 100%;
   }
 
   h1 {

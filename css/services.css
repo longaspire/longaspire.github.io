@@ -68,10 +68,6 @@
 }
 
 /* Membership specific styling */
-#membership-section {
-  background-color: #f8faff;
-}
-
 #membership-section ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

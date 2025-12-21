@@ -1,4 +1,5 @@
 #publication-filters {
+  box-sizing: border-box;
   margin-bottom: 30px;
   padding: 20px;
   background-color: #f8fbff;
@@ -211,6 +212,7 @@
 }
 
 .search-group input {
+  box-sizing: border-box;
   flex: 1;
   max-width: 450px;
   padding: 12px 16px;
