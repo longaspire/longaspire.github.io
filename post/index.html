@@ -101,153 +101,219 @@
   </header>
 
   <article class="post-content">
-    <dl class="wp-caption alignright" style="max-width: 360px; text-align:left">
-	<dt style="margin-left:10px; margin-right:10px; margin-top:5px;">
+    <link rel="stylesheet" href="/css/post.css" />
 
-  <br />
-  <ul>
+<div class="post-container">
+
+<div id="post-filters">
+  <div class="filter-group">
+    <strong>Category:</strong>
+    <button class="filter-btn active" data-filter-category="all" onclick="filterPosts('category', 'all')">All</button>
+    
+    
+      <button class="filter-btn" data-filter-category="AI" onclick="filterPosts('category', 'AI')">AI</button>
+    
+      <button class="filter-btn" data-filter-category="funding" onclick="filterPosts('category', 'funding')">funding</button>
+    
+      <button class="filter-btn" data-filter-category="personal information" onclick="filterPosts('category', 'personal information')">personal information</button>
+    
+      <button class="filter-btn" data-filter-category="publication" onclick="filterPosts('category', 'publication')">publication</button>
+    
+      <button class="filter-btn" data-filter-category="research" onclick="filterPosts('category', 'research')">research</button>
+    
+      <button class="filter-btn" data-filter-category="teaching" onclick="filterPosts('category', 'teaching')">teaching</button>
+    
+  </div>
+  <div class="filter-group">
+    <strong>Date:</strong>
+    <button class="filter-btn active" data-filter-year="all" onclick="filterPosts('year', 'all')">All</button>
+    
+    
+    
+      <button class="filter-btn" data-filter-year="2025" onclick="filterPosts('year', '2025')">2025</button>
+    
+      <button class="filter-btn" data-filter-year="2023" onclick="filterPosts('year', '2023')">2023</button>
+    
+      <button class="filter-btn" data-filter-year="2022" onclick="filterPosts('year', '2022')">2022</button>
+    
+      <button class="filter-btn" data-filter-year="2021" onclick="filterPosts('year', '2021')">2021</button>
+    
+      <button class="filter-btn" data-filter-year="2020" onclick="filterPosts('year', '2020')">2020</button>
+    
+      <button class="filter-btn" data-filter-year="2019" onclick="filterPosts('year', '2019')">2019</button>
+    
+  </div>
+  <div class="filter-group search-group">
+    <strong>Search:</strong>
+    <input type="text" id="post-search" placeholder="Search post titles..." onkeyup="filterPosts('search', this.value)" />
+    <span id="post-search-results-count" class="search-count-badge" style="display: none;"></span>
+  </div>
+</div>
+
+<section class="post-section">
+  <h2><i class="fas fa-pen-nib"></i> Latest Posts</h2>
+  <ul class="listing">
   
-    <li>
-    <b><a href="/categories/">Go</a></b> to explore my posts organized by category.
-    </li><br />
-
-    <li>
-  	My blog in Chinese is available <b><a href="https://longaspire.github.io/blog/" target="_blank">here</a></b>, featuring primarily my study notes and previously published original poems.
-    </li><br />
-
+    
+    
+      
+      <li class="listing-seperator">2025</li>
+    
+    
+    <li class="listing-item" data-categories="personal information,AI">
+      <time datetime="2025-12-20">2025-12-20</time>
+      <a href="/post/2025/12/ai-driven-website-refresh.html" title="The Art of Vibing: Reshaping My Website Using Antigravity and Gemini Flash">The Art of Vibing: Reshaping My Website Using Antigravity and Gemini Flash</a>
+    </li>
+  
+    
+    
+      
+      <li class="listing-seperator">2023</li>
+    
+    
+    <li class="listing-item" data-categories="personal information">
+      <time datetime="2023-02-10">2023-02-10</time>
+      <a href="/post/2023/02/post-1.html" title="A New Chapter in My Career">A New Chapter in My Career</a>
+    </li>
+  
+    
+    
+      
+      <li class="listing-seperator">2022</li>
+    
+    
+    <li class="listing-item" data-categories="publication">
+      <time datetime="2022-02-01">2022-02-01</time>
+      <a href="/post/2022/02/post-1.html" title="Spatial Data Quality in the Internet of Things">Spatial Data Quality in the Internet of Things</a>
+    </li>
+  
+    
+    
+      
+      <li class="listing-seperator">2021</li>
+    
+    
+    <li class="listing-item" data-categories="publication">
+      <time datetime="2021-01-19">2021-01-19</time>
+      <a href="/post/2021/01/post-1.html" title="New Survey Paper about COVID-19 and IoT">New Survey Paper about COVID-19 and IoT</a>
+    </li>
+  
+    
+    
+      
+      <li class="listing-seperator">2020</li>
+    
+    
+    <li class="listing-item" data-categories="teaching">
+      <time datetime="2020-07-13">2020-07-13</time>
+      <a href="/post/2020/07/post-2.html" title="Information of DBU Course (Fall 2020)">Information of DBU Course (Fall 2020)</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="teaching">
+      <time datetime="2020-07-01">2020-07-01</time>
+      <a href="/post/2020/07/post-1.html" title="Teaching DBU Course (Fall 2020)">Teaching DBU Course (Fall 2020)</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="research">
+      <time datetime="2020-07-01">2020-07-01</time>
+      <a href="/post/2020/07/post-4.html" title="ISQEA Project Open-sourced">ISQEA Project Open-sourced</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="funding">
+      <time datetime="2020-07-01">2020-07-01</time>
+      <a href="/post/2020/07/post-3.html" title="Indoor-LBS Project Site Online Now">Indoor-LBS Project Site Online Now</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="funding">
+      <time datetime="2020-06-30">2020-06-30</time>
+      <a href="/post/2020/06/post-2.html" title="MSCA Project Site Online Now">MSCA Project Site Online Now</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="personal information">
+      <time datetime="2020-06-15">2020-06-15</time>
+      <a href="/post/2020/06/post-1.html" title="Assistant Professorship at AAU">Assistant Professorship at AAU</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="funding">
+      <time datetime="2020-04-08">2020-04-08</time>
+      <a href="/post/2020/04/post-1.html" title="Get to MSCA Implementation">Get to MSCA Implementation</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="personal information">
+      <time datetime="2020-03-09">2020-03-09</time>
+      <a href="/post/2020/03/post-1.html" title="Start Working from Home">Start Working from Home</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="funding">
+      <time datetime="2020-02-04">2020-02-04</time>
+      <a href="/post/2020/02/post-1.html" title="Good News about My MSCA Proposal">Good News about My MSCA Proposal</a>
+    </li>
+  
+    
+    
+      
+      <li class="listing-seperator">2019</li>
+    
+    
+    <li class="listing-item" data-categories="research">
+      <time datetime="2019-12-20">2019-12-20</time>
+      <a href="/post/2019/12/post-2.html" title="Towards Ubiquitous Location Intelligence">Towards Ubiquitous Location Intelligence</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-item" data-categories="personal information">
+      <time datetime="2019-11-10">2019-11-10</time>
+      <a href="/post/2019/11/post-1.html" title="New Information Venue">New Information Venue</a>
+    </li>
+  
   </ul>
+</section>
 
-	</dt>
-</dl>
+<div id="links-collapsible" class="collapsible-container is-collapsed">
+  <button class="collapsible-toggle" onclick="toggleLinks()">
+    <h2><i class="fas fa-link"></i> More Resources</h2>
+    <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+  </button>
+  <div class="collapsible-content">
+      <p>
+        <b><a href="/categories/">Go</a></b> to explore my posts organized by category.
+      </p>
+      <p>
+        My blog in Chinese is available <b><a href="https://longaspire.github.io/blog/" target="_blank">here</a></b>, featuring primarily my study notes and previously published original poems.
+      </p>
+  </div>
+</div>
 
-<!-- Here are my carefully compiled views on some topics that I encountered so far. Hopefully, you will find them helpful!  -->
+</div>
 
-<ul class="listing">
+<script src="/js/post.js"></script>
 
-  
-  
-    
-    <li class="listing-seperator">2025</li>
-  
-  <li class="listing-item">
-    <time datetime="2025-12-20">2025-12-20</time>
-    <a href="/post/2025/12/ai-driven-website-refresh.html" title="The Art of Vibing: Reshaping My Website">The Art of Vibing: Reshaping My Website</a>
-  </li>
-
-  
-  
-    
-    <li class="listing-seperator">2023</li>
-  
-  <li class="listing-item">
-    <time datetime="2023-02-10">2023-02-10</time>
-    <a href="/post/2023/02/post-1.html" title="A New Chapter in My Career">A New Chapter in My Career</a>
-  </li>
-
-  
-  
-    
-    <li class="listing-seperator">2022</li>
-  
-  <li class="listing-item">
-    <time datetime="2022-02-01">2022-02-01</time>
-    <a href="/post/2022/02/post-1.html" title="Spatial Data Quality in the Internet of Things">Spatial Data Quality in the Internet of Things</a>
-  </li>
-
-  
-  
-    
-    <li class="listing-seperator">2021</li>
-  
-  <li class="listing-item">
-    <time datetime="2021-01-19">2021-01-19</time>
-    <a href="/post/2021/01/post-1.html" title="New Survey Paper about COVID-19 and IoT">New Survey Paper about COVID-19 and IoT</a>
-  </li>
-
-  
-  
-    
-    <li class="listing-seperator">2020</li>
-  
-  <li class="listing-item">
-    <time datetime="2020-07-13">2020-07-13</time>
-    <a href="/post/2020/07/post-2.html" title="Information of DBU Course (Fall 2020)">Information of DBU Course (Fall 2020)</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-07-01">2020-07-01</time>
-    <a href="/post/2020/07/post-1.html" title="Teaching DBU Course (Fall 2020)">Teaching DBU Course (Fall 2020)</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-07-01">2020-07-01</time>
-    <a href="/post/2020/07/post-4.html" title="ISQEA Project Open-sourced">ISQEA Project Open-sourced</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-07-01">2020-07-01</time>
-    <a href="/post/2020/07/post-3.html" title="Indoor-LBS Project Site Online Now">Indoor-LBS Project Site Online Now</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-06-30">2020-06-30</time>
-    <a href="/post/2020/06/post-2.html" title="MSCA Project Site Online Now">MSCA Project Site Online Now</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-06-15">2020-06-15</time>
-    <a href="/post/2020/06/post-1.html" title="Assistant Professorship at AAU">Assistant Professorship at AAU</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-04-08">2020-04-08</time>
-    <a href="/post/2020/04/post-1.html" title="Get to MSCA Implementation">Get to MSCA Implementation</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-03-09">2020-03-09</time>
-    <a href="/post/2020/03/post-1.html" title="Start Working from Home">Start Working from Home</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2020-02-04">2020-02-04</time>
-    <a href="/post/2020/02/post-1.html" title="Good News about My MSCA Proposal">Good News about My MSCA Proposal</a>
-  </li>
-
-  
-  
-    
-    <li class="listing-seperator">2019</li>
-  
-  <li class="listing-item">
-    <time datetime="2019-12-20">2019-12-20</time>
-    <a href="/post/2019/12/post-2.html" title="Towards Ubiquitous Location Intelligence">Towards Ubiquitous Location Intelligence</a>
-  </li>
-
-  
-  
-  <li class="listing-item">
-    <time datetime="2019-11-10">2019-11-10</time>
-    <a href="/post/2019/11/post-1.html" title="New Information Venue">New Information Venue</a>
-  </li>
-
-</ul>
 
   </article>
 

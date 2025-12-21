@@ -1,0 +1,245 @@
+/* post.css */
+
+.post-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post-section {
+  margin-bottom: 1rem;
+  padding: 12px 16px;
+  background-color: #f0f7ff; /* Faint light blue background */
+  border: 1px solid #dcebfa;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 63, 126, 0.03);
+  transition: all 0.3s ease;
+}
+
+.post-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 63, 126, 0.08);
+  border-color: #003f7e;
+  background-color: #eaf4ff;
+}
+
+.post-section h2 {
+  color: #003f7e;
+  margin-top: 0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+  border-bottom: 1px solid #e1eaf3;
+  padding-bottom: 6px;
+}
+
+.post-section h2 i {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.listing-seperator {
+  font-weight: 700;
+  color: #003f7e;
+  background: #e1eaf3;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 10px 0 6px 0;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.listing-item {
+  display: flex;
+  align-items: baseline;
+  padding: 5px 0;
+  border-bottom: 1px solid #eef2f6;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.listing-item:last-child {
+  border-bottom: none;
+}
+
+.listing-item time {
+  min-width: 90px;
+  color: #777;
+  font-size: 0.82rem;
+  font-family: monospace;
+}
+
+#post-filters {
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding: 16px;
+  background-color: #f8fbff;
+  border: 1px solid #dcebfa;
+  border-radius: 12px;
+  font-size: 0.92em;
+}
+
+.filter-group {
+  margin-bottom: 12px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group strong {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #003f7e;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  margin: 0 4px 4px 0;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.88em;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #f0f7ff;
+  border-color: #003f7e;
+}
+
+.filter-btn.active {
+  background-color: #003f7e;
+  color: white;
+  border-color: #003f7e;
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-group input {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.search-group input:focus {
+  outline: none;
+  border-color: #003f7e;
+  box-shadow: 0 0 0 3px rgba(0, 63, 126, 0.1);
+}
+
+.search-count-badge {
+  background-color: #e1eaf3;
+  color: #003f7e;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+/* Collapsible Section Styling (Aligned with Publications Page) */
+.collapsible-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dcebfa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 63, 126, 0.03);
+  transition: all 0.3s ease;
+}
+
+.collapsible-container:hover {
+  border-color: #003f7e;
+  box-shadow: 0 4px 10px rgba(0, 63, 126, 0.08);
+}
+
+.collapsible-toggle {
+  width: 100%;
+  text-align: left;
+  background-color: #f0f7ff;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible-toggle h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #003f7e;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.collapsible-toggle:hover {
+  background-color: #eaf4ff;
+}
+
+.toggle-icon {
+  font-size: 0.8em;
+  color: #003f7e;
+  transition: transform 0.3s ease;
+}
+
+.is-collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+
+.collapsible-content {
+  padding: 12px 16px;
+  background-color: #f8fbff;
+  display: block;
+}
+
+.is-collapsed .collapsible-content {
+  display: none;
+}
+
+.collapsible-content p {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.collapsible-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .post-section {
+    padding: 12px;
+  }
+  
+  .listing-item {
+    flex-direction: column;
+  }
+  
+  .listing-item time {
+    margin-bottom: 4px;
+  }
+}

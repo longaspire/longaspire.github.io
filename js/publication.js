@@ -97,40 +97,27 @@ function toggleAcknowledgements() {
   collapsible.classList.toggle("acknowledgements-collapsed");
 }
 
-// Helper to convert string to Title Case (excluding small words)
+// Helper to convert string to Title Case and handle acronyms
 function toTitleCase(str) {
-  const smallWords =
-    /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|v\.?|vs\.?|via)$/i;
+  if (!str) return str;
+  const smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|v\.?|vs\.?|via)$/i;
+  const acronyms = /^(ai|iot|llm|ml|nlp|it)$/i;
 
-  // Split by whitespace but keep track of previous word's ending character
-  let words = str.split(/\s+/);
-
-  return words
-    .map(function (word, index) {
-      const lowerWord = word.toLowerCase();
-
-      // Always capitalize the first and last word
-      if (index === 0 || index === words.length - 1) {
-        return word.charAt(0).toUpperCase() + word.substr(1);
-      }
-
-      // Check if the previous word ended with a colon or dash
-      const prevWord = words[index - 1];
-      const shouldCapitalizeAfterPrefix = /[:\-\u2013\u2014]$/.test(prevWord);
-
-      if (shouldCapitalizeAfterPrefix) {
-        return word.charAt(0).toUpperCase() + word.substr(1);
-      }
-
-      // If it's a small word, keep it lowercase
-      if (lowerWord.match(smallWords)) {
-        return lowerWord;
-      }
-
-      // Default capitalization
-      return word.charAt(0).toUpperCase() + word.substr(1);
-    })
-    .join(" ");
+  return str.split(/\s+/).map((word, index, words) => {
+    const lower = word.toLowerCase();
+    
+    // Handle acronyms
+    if (lower.match(acronyms)) {
+      return word.toUpperCase();
+    }
+    
+    // Always capitalize first and last word, or words that aren't "small words"
+    if (index === 0 || index === words.length - 1 || !lower.match(smallWords)) {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }
+    
+    return lower;
+  }).join(' ');
 }
 
 // Function to filter publications
