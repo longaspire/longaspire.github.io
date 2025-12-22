@@ -52,7 +52,7 @@
   position: relative;
   vertical-align: top; }
   .site-nav .menu > li:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
 
 .site-nav a {
   display: block;

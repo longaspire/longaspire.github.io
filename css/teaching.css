@@ -43,7 +43,8 @@
 /* Photo style outside card */
 .teaching-photo-cell {
   display: flex;
-  align-items: flex-end; /* Bottom align as requested */
+  align-items: flex-end;
+  /* Bottom align as requested */
   justify-content: center;
 }
 
@@ -84,7 +85,7 @@
   padding-left: 20px;
   margin-bottom: 4px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .teaching-list li ul li {
@@ -97,7 +98,7 @@
   font-weight: 400;
 }
 
-.teaching-list > li::before {
+.teaching-list>li::before {
   content: "•";
   position: absolute;
   left: 0;

@@ -8,7 +8,8 @@
 .project-section {
   margin-bottom: 1rem;
   padding: 12px 16px;
-  background-color: #f0f7ff; /* Faint light blue background */
+  background-color: #f0f7ff;
+  /* Faint light blue background */
   border: 1px solid #dcebfa;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 63, 126, 0.03);
@@ -16,7 +17,8 @@
 }
 
 .project-section:hover {
-  transform: translateY(-2px); /* Subtle lift */
+  transform: translateY(-2px);
+  /* Subtle lift */
   box-shadow: 0 4px 10px rgba(0, 63, 126, 0.08);
   border-color: #003f7e;
   background-color: #eaf4ff;
@@ -49,9 +51,11 @@
 .project-list li {
   position: relative;
   padding-left: 22px;
-  margin-bottom: 8px; /* Slightly more space for two-row spacing */
+  margin-bottom: 8px;
+  /* Slightly more space for two-row spacing */
   line-height: 1.4;
-  font-weight: 600; /* Bold font for consistency with services page */
+  font-weight: 400;
+  /* Bold font for consistency with services page */
 }
 
 .item-title {
@@ -67,7 +71,8 @@
 }
 
 .project-list li::before {
-  content: "•"; /* Standard bullet */
+  content: "•";
+  /* Standard bullet */
   position: absolute;
   left: 0;
   top: 1px;

@@ -105,17 +105,26 @@ function toTitleCase(str) {
 
   return str.split(/\s+/).map((word, index, words) => {
     const lower = word.toLowerCase();
-    
+
     // Handle acronyms
     if (lower.match(acronyms)) {
       return word.toUpperCase();
     }
-    
-    // Always capitalize first and last word, or words that aren't "small words"
-    if (index === 0 || index === words.length - 1 || !lower.match(smallWords)) {
+
+    // Check if it's the first word or start of subtitle (after colon)
+    const isSubtitleStart = index > 0 && words[index - 1].endsWith(':');
+
+    // Preserve mixed case for first word or subtitle start to support acronyms like CoIDO
+    // Also ensures subtitle start words like "On" are capitalized
+    if (index === 0 || isSubtitleStart) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }
+
+    // Always capitalize last word, or words that aren't "small words"
+    if (index === words.length - 1 || !lower.match(smallWords)) {
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     }
-    
+
     return lower;
   }).join(' ');
 }

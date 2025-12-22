@@ -6,9 +6,12 @@
 }
 
 .service-section {
-  margin-bottom: 1rem; /* Reduced from 2.5rem */
-  padding: 12px 16px; /* Reduced from 20px */
-  background-color: #f0f7ff; /* Faint light blue background */
+  margin-bottom: 1rem;
+  /* Reduced from 2.5rem */
+  padding: 12px 16px;
+  /* Reduced from 20px */
+  background-color: #f0f7ff;
+  /* Faint light blue background */
   border: 1px solid #dcebfa;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 63, 126, 0.03);
@@ -16,7 +19,8 @@
 }
 
 .service-section:hover {
-  transform: translateY(-2px); /* Subtle lift */
+  transform: translateY(-2px);
+  /* Subtle lift */
   box-shadow: 0 4px 10px rgba(0, 63, 126, 0.08);
   border-color: #003f7e;
   background-color: #eaf4ff;
@@ -25,17 +29,21 @@
 .service-section h2 {
   color: #003f7e;
   margin-top: 0;
-  margin-bottom: 8px; /* Reduced from 15px */
+  margin-bottom: 8px;
+  /* Reduced from 15px */
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.15rem; /* Smaller from 1.4rem */
+  font-size: 1.15rem;
+  /* Smaller from 1.4rem */
   border-bottom: 1px solid #e1eaf3;
-  padding-bottom: 6px; /* Reduced from 10px */
+  padding-bottom: 6px;
+  /* Reduced from 10px */
 }
 
 .service-section h2 i {
-  font-size: 1rem; /* Smaller from 1.2rem */
+  font-size: 1rem;
+  /* Smaller from 1.2rem */
   width: 20px;
   text-align: center;
 }
@@ -49,13 +57,17 @@
 .service-list li {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 3px; /* Tighter from 8px */
-  line-height: 1.4; /* Slightly tighter line height */
-  font-weight: 600; /* Bold font for items as requested */
+  margin-bottom: 3px;
+  /* Tighter from 8px */
+  line-height: 1.4;
+  /* Slightly tighter line height */
+  font-weight: 400;
+  /* Bold font for items as requested */
 }
 
 .service-list li::before {
-  content: "•"; /* Standard bullet */
+  content: "•";
+  /* Standard bullet */
   position: absolute;
   left: 0;
   top: 1px;
@@ -78,7 +90,7 @@
   #membership-section ul {
     grid-template-columns: 1fr;
   }
-  
+
   .service-section {
     padding: 15px;
   }
