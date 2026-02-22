@@ -23,248 +23,183 @@ function getPublicationType(item) {
   return "conference";
 }
 
-// Function to count publications by type and year
-function countPublications() {
-  const yearSections = document.querySelectorAll(".year-section");
-  const counts = {
-    type: { all: 0, journal: 0, conference: 0 },
-    year: {
-      all: 0,
-      2025: 0,
-      2024: 0,
-      2023: 0,
-      2022: 0,
-      2021: 0,
-      2020: 0,
-      2019: 0,
-      2018: 0,
-    },
-  };
-
-  yearSections.forEach((yearSection) => {
-    const year = yearSection.getAttribute("data-year");
-    const pubList = yearSection.nextElementSibling;
-
-    if (!pubList || pubList.tagName !== "UL") {
-      return;
-    }
-
-    const publications = pubList.querySelectorAll("li");
-    publications.forEach((pub) => {
-      const pubType = getPublicationType(pub);
-
-      // Count by type
-      counts.type.all++;
-      if (pubType === "journal" || pubType === "both") {
-        counts.type.journal++;
-      }
-      if (pubType === "conference" || pubType === "both") {
-        counts.type.conference++;
-      }
-
-      // Count by year
-      counts.year.all++;
-      if (year && counts.year[year] !== undefined) {
-        counts.year[year]++;
-      }
-    });
-  });
-
-  // Update type counts
-  document.getElementById("count-type-all").textContent =
-    "(" + counts.type.all + ")";
-  document.getElementById("count-type-journal").textContent =
-    "(" + counts.type.journal + ")";
-  document.getElementById("count-type-conference").textContent =
-    "(" + counts.type.conference + ")";
-
-  // Update year counts
-  document.getElementById("count-year-all").textContent =
-    "(" + counts.year.all + ")";
-  ["2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018"].forEach(
-    (year) => {
-      const countEl = document.getElementById("count-year-" + year);
-      if (countEl) {
-        countEl.textContent = "(" + counts.year[year] + ")";
-      }
-    }
-  );
-}
-
 // Function to toggle acknowledgements
 function toggleAcknowledgements() {
   const collapsible = document.getElementById("acknowledgements-collapsible");
   collapsible.classList.toggle("acknowledgements-collapsed");
 }
 
-// Helper to convert string to Title Case and handle acronyms
+// Helper to convert string to Title Case while preserving acronyms/special formats
 function toTitleCase(str) {
   if (!str) return str;
-  const smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|v\.?|vs\.?|via)$/i;
-  const acronyms = /^(ai|iot|llm|ml|nlp|it)$/i;
 
-  return str.split(/\s+/).map((word, index, words) => {
-    const lower = word.toLowerCase();
+  const smallWords = /^(a|an|and|as|at|but|by|en|for|into|if|in|nor|of|on|or|per|the|to|v\.?|vs\.?|via)$/i;
 
-    // Handle acronyms
-    if (lower.match(acronyms)) {
-      return word.toUpperCase();
+  // Process a single "word" (could be part of a hyphenated word)
+  function processWord(word, isFirstInSegment) {
+    // Strip surrounding non-word characters for analysis
+    const clean = word.replace(/^[^\w^]+|[^\w]+$/g, '');
+    if (!clean) return word; 
+
+    // Preservation Heuristic: Keep if all caps, mixed case, or has special symbols
+    const isSpecial = clean.length > 1 && (
+      (clean === clean.toUpperCase()) || 
+      (/[A-Z]/.test(clean.slice(1))) || 
+      (/[\d\^_\+\*]/.test(clean))
+    );
+
+    if (isSpecial) return word;
+
+    const lower = clean.toLowerCase();
+    
+    // If it's a small word and NOT the start of a segment, force lowercase
+    if (smallWords.test(lower) && !isFirstInSegment) {
+      return word.replace(clean, lower);
     }
 
-    // Check if it's the first word or start of subtitle (after colon)
-    const isSubtitleStart = index > 0 && words[index - 1].endsWith(':');
+    // Standard capitalization for ordinary words
+    return word.replace(clean, lower.charAt(0).toUpperCase() + lower.slice(1));
+  }
 
-    // Preserve mixed case for first word or subtitle start to support acronyms like CoIDO
-    // Also ensures subtitle start words like "On" are capitalized
-    if (index === 0 || isSubtitleStart) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
+  // Split by whitespace and process each token
+  const tokens = str.split(/\s+/);
+  return tokens.map((token, index) => {
+    const isFirst = index === 0;
+    const isLast = index === tokens.length - 1;
+    const followsSeparator = index > 0 && (
+      tokens[index-1].endsWith(':') || 
+      tokens[index-1].endsWith(';') || 
+      tokens[index-1] === '&'
+    );
+
+    // Handle internal hyphens like "two-tier" or "multi-DNN"
+    if (token.includes('-') && token.length > 1) {
+      const parts = token.split('-');
+      return parts.map((part, pIdx) => {
+        const isStart = (pIdx === 0 && (isFirst || followsSeparator));
+        return processWord(part, isStart || pIdx > 0);
+      }).join('-');
     }
 
-    // Always capitalize last word, or words that aren't "small words"
-    if (index === words.length - 1 || !lower.match(smallWords)) {
-      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    }
-
-    return lower;
+    return processWord(token, isFirst || isLast || followsSeparator);
   }).join(' ');
 }
 
-// Function to filter publications
+// Function to filter publications and update dynamic counters
 function filterPublications(filterCategory, value) {
   if (filterCategory === "type") {
     currentTypeFilter = value;
-    // Update active state for type buttons
     document.querySelectorAll("[data-filter-type]").forEach((btn) => {
-      btn.classList.remove("active");
-      if (btn.getAttribute("data-filter-type") === value) {
-        btn.classList.add("active");
-      }
+      btn.classList.toggle("active", btn.getAttribute("data-filter-type") === value);
     });
   } else if (filterCategory === "year") {
     currentYearFilter = value;
-    // Update active state for year buttons
     document.querySelectorAll("[data-filter-year]").forEach((btn) => {
-      btn.classList.remove("active");
-      if (btn.getAttribute("data-filter-year") === value) {
-        btn.classList.add("active");
-      }
+      btn.classList.toggle("active", btn.getAttribute("data-filter-year") === value);
     });
   } else if (filterCategory === "search") {
     currentSearchFilter = value.toLowerCase();
   }
 
-  // Get all year sections and their publication lists
   const yearSections = document.querySelectorAll(".year-section");
-  let totalVisibleCount = 0;
+  let totalVisibleOverall = 0;
+  
+  // Counts structure to track matches for buttons
+  const counts = {
+    type: { all: 0, journal: 0, conference: 0 },
+    year: { all: 0, 2026: 0, 2025: 0, 2024: 0, 2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0 }
+  };
 
   yearSections.forEach((yearSection) => {
     const year = yearSection.getAttribute("data-year");
     const pubList = yearSection.nextElementSibling;
+    if (!pubList || pubList.tagName !== "UL") return;
 
-    if (!pubList || pubList.tagName !== "UL") {
-      return;
-    }
-
-    let hasVisiblePublications = false;
+    let visibleInYear = 0;
     const publications = pubList.querySelectorAll("li");
 
     publications.forEach((pub) => {
       const pubType = getPublicationType(pub);
-      const showByType =
-        currentTypeFilter === "all" ||
-        (currentTypeFilter === "journal" &&
-          (pubType === "journal" || pubType === "both")) ||
-        (currentTypeFilter === "conference" &&
-          (pubType === "conference" || pubType === "both"));
+      
+      const matchesSearch = currentSearchFilter === "" || pub.textContent.toLowerCase().includes(currentSearchFilter);
+      const matchesType = currentTypeFilter === "all" || (currentTypeFilter === "journal" && (pubType === "journal" || pubType === "both")) || (currentTypeFilter === "conference" && (pubType === "conference" || pubType === "both"));
+      const matchesYear = currentYearFilter === "all" || year === currentYearFilter;
 
-      const showByYear =
-        currentYearFilter === "all" ||
-        (currentYearFilter === "2025" && year === "2025") ||
-        (currentYearFilter === "2024" && year === "2024") ||
-        (currentYearFilter === "2023" && year === "2023") ||
-        (currentYearFilter === "2022" && year === "2022") ||
-        (currentYearFilter === "2021" && year === "2021") ||
-        (currentYearFilter === "2020" && year === "2020") ||
-        (currentYearFilter === "2019" && year === "2019") ||
-        (currentYearFilter === "2018" && year === "2018");
+      // Update counters for TYPE buttons: must match Search + Year filter
+      if (matchesSearch && matchesYear) {
+        counts.type.all++;
+        if (pubType === "journal" || pubType === "both") counts.type.journal++;
+        if (pubType === "conference" || pubType === "both") counts.type.conference++;
+      }
 
-      const showBySearch =
-        currentSearchFilter === "" ||
-        pub.textContent.toLowerCase().includes(currentSearchFilter);
+      // Update counters for YEAR buttons: must match Search + Type filter
+      if (matchesSearch && matchesType) {
+        counts.year.all++;
+        if (counts.year[year] !== undefined) counts.year[year]++;
+      }
 
-      if (showByType && showByYear && showBySearch) {
+      // Final visibility check (matches ALL filters)
+      if (matchesSearch && matchesType && matchesYear) {
         pub.style.display = "";
-        // Show the <br> tag that immediately follows this list item (if it exists)
+        visibleInYear++;
+        totalVisibleOverall++;
+        
+        // Handle trailing <br>
         let nextNode = pub.nextSibling;
-        while (nextNode && nextNode.nodeType === Node.TEXT_NODE && !nextNode.textContent.trim()) {
-          nextNode = nextNode.nextSibling;
-        }
-        if (nextNode && nextNode.tagName === "BR") {
-          nextNode.style.display = "";
-        }
-        hasVisiblePublications = true;
-        totalVisibleCount++;
+        while (nextNode && nextNode.nodeType === Node.TEXT_NODE && !nextNode.textContent.trim()) nextNode = nextNode.nextSibling;
+        if (nextNode && nextNode.tagName === "BR") nextNode.style.display = "";
       } else {
         pub.style.display = "none";
-        // Hide the <br> tag that immediately follows this list item
         let nextNode = pub.nextSibling;
-        while (nextNode && nextNode.nodeType === Node.TEXT_NODE && !nextNode.textContent.trim()) {
-          nextNode = nextNode.nextSibling;
-        }
-        if (nextNode && nextNode.tagName === "BR") {
-          nextNode.style.display = "none";
-        }
+        while (nextNode && nextNode.nodeType === Node.TEXT_NODE && !nextNode.textContent.trim()) nextNode = nextNode.nextSibling;
+        if (nextNode && nextNode.tagName === "BR") nextNode.style.display = "none";
       }
     });
 
-    // Show/hide year section based on visible publications
-    if (hasVisiblePublications) {
+    // Handle Year Section visibility and Title
+    if (visibleInYear > 0) {
       yearSection.style.display = "";
       pubList.style.display = "";
+      
+      let originalText = yearSection.getAttribute("data-original-text") || yearSection.textContent.trim().replace(/\s*\(Journal\)\s*$/, "").replace(/\s*\(Conference\)\s*$/, "");
+      if (!yearSection.getAttribute("data-original-text")) yearSection.setAttribute("data-original-text", originalText);
 
-      // Add type identifier to year section title
-      let originalText = yearSection.getAttribute("data-original-text");
-      if (!originalText) {
-        // Extract original text (remove any existing type identifier)
-        originalText = yearSection.textContent
-          .trim()
-          .replace(/\s*\(Journal\)\s*$/, "")
-          .replace(/\s*\(Conference\)\s*$/, "");
-        yearSection.setAttribute("data-original-text", originalText);
-      }
-
-      // Add type identifier based on current filter
       let displayText = originalText;
-      if (currentTypeFilter === "journal") {
-        displayText =
-          originalText +
-          ' <span style="font-size: 0.75em; color: #666; font-weight: normal;">(Journal)</span>';
-      } else if (currentTypeFilter === "conference") {
-        displayText =
-          originalText +
-          ' <span style="font-size: 0.75em; color: #666; font-weight: normal;">(Conference)</span>';
-      }
-      // Only update if text has changed
-      if (yearSection.innerHTML !== displayText) {
-        yearSection.innerHTML = displayText;
-      }
+      if (currentTypeFilter === "journal") displayText += ' <span style="font-size: 0.75em; color: #666; font-weight: normal;">(Journal)</span>';
+      else if (currentTypeFilter === "conference") displayText += ' <span style="font-size: 0.75em; color: #666; font-weight: normal;">(Conference)</span>';
+      
+      if (yearSection.innerHTML !== displayText) yearSection.innerHTML = displayText;
     } else {
       yearSection.style.display = "none";
       pubList.style.display = "none";
     }
   });
 
-  // Update search results count
+  // Update DOM with new counts
+  document.getElementById("count-type-all").textContent = "(" + counts.type.all + ")";
+  document.getElementById("count-type-journal").textContent = "(" + counts.type.journal + ")";
+  document.getElementById("count-type-conference").textContent = "(" + counts.type.conference + ")";
+
+  document.getElementById("count-year-all").textContent = "(" + counts.year.all + ")";
+  Object.keys(counts.year).forEach(y => {
+    if (y === "all") return;
+    const el = document.getElementById("count-year-" + y);
+    if (el) el.textContent = "(" + counts.year[y] + ")";
+  });
+
+  // Update search results message
   const countEl = document.getElementById("search-results-count");
   if (countEl) {
     if (currentSearchFilter !== "") {
-      countEl.textContent = `Found ${totalVisibleCount} publication${totalVisibleCount !== 1 ? "s" : ""}`;
+      countEl.textContent = `Found ${totalVisibleOverall} publication${totalVisibleOverall !== 1 ? "s" : ""}`;
       countEl.style.display = "inline-block";
     } else {
       countEl.style.display = "none";
     }
   }
 }
+
+// Integrated into filterPublications
 
 // Function to enhance publication items with class names and Title Case
 function enhancePublicationItems() {
@@ -312,9 +247,6 @@ function enhancePublicationItems() {
 document.addEventListener("DOMContentLoaded", function () {
   // Enhance publication items with class names
   enhancePublicationItems();
-  // Count publications first
-  countPublications();
-  // Trigger filtering with current filter values (shows all by default)
   filterPublications("type", currentTypeFilter);
   // Collapse acknowledgements by default
   const collapsible = document.getElementById("acknowledgements-collapsible");
