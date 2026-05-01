@@ -13,7 +13,10 @@ function getPublicationType(item) {
     return "both";
   } else if (text.includes('color-button-type">journal')) {
     return "journal";
-  } else if (text.includes('color-button-type">conference')) {
+  } else if (
+    text.includes('color-button-type">conference') ||
+    text.includes('color-button-type">confernece')
+  ) {
     return "conference";
   }
   // Default to conference if no type found
