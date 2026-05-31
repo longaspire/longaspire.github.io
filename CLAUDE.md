@@ -59,7 +59,7 @@ bundle update # Update gems
 
 ### Deployment Flow
 1. Source repo (`personal_page`) contains Jekyll source
-2. `./deploy.sh` builds to `_site/` and syncs to production repo (`longaspire.github.io`)
+2. `./deploy.sh` builds to `_site/` and syncs to the production repository
 3. Production repo is force-pushed to `origin master` on GitHub Pages
 4. Source backup is committed with timestamp and pushed to source repo
 
@@ -68,3 +68,49 @@ bundle update # Update gems
 - Site URL: `https://longaspire.github.io`
 - Google Analytics ID: `UA-160136605-1`
 - Math rendering: MathJax via kramdown
+
+## Publication Maintenance
+
+### Publication Data Source
+Publications are managed in two places:
+- **`publication.md`** — The rendered page shown on the website
+- **Paper overview JSON** (maintained locally) — Source of truth for DOIs, titles, authors, venues
+
+When updating publications, cross-reference both files. The JSON is the authoritative source for DOI data.
+
+### Adding a New Publication
+1. Add the entry to the appropriate year section in `publication.md` (before the next year's `<h2>` tag)
+2. Follow the existing HTML format:
+```html
+<li>
+    Paper Title Here.<br>
+    Authors with <b>Huan Li</b> in bold.<br>
+    <i>Venue with <b>CCF-X</b> and <b>CORE-X</b> tags.</i><br>
+    <a href="https://doi.org/..." target="_blank">
+        <div class="color-button">DOI</div>
+    </a>
+    <a>
+        <div class="color-button-type">CONFERENCE</div>
+    </a>
+    <a>
+        <div class="color-button-tag">CCF-A</div>
+    </a>
+    <a>
+        <div class="color-button-tag">CORE-A*</div>
+    </a>
+</li><br>
+```
+3. Set `href="#"` if DOI is not yet available
+
+### Fixing DOIs in Publication.md
+Common issues and fixes:
+- **Missing DOI**: Entry has `href="#"` — replace with correct DOI from paper-overview.json
+- **Duplicate DOIs**: Two papers sharing same DOI — one is wrong, check paper-overview.json
+- **Malformed URL**: e.g., `https://doi.org/...ij` — remove trailing garbage characters
+- **Duplicate entries**: Same paper appears twice — remove the duplicate block
+
+### DOI Format Guidelines
+- Standard DOI: `https://doi.org/10.xxxx/...`
+- OpenReview DOI: `https://openreview.net/forum?id=...`
+- ACL Anthology: `https://aclanthology.org/...`
+- ICML virtual: `https://icml.cc/virtual/2025/poster/...` (not a standard DOI — use as-is if no DOI available)
