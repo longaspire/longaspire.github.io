@@ -17,7 +17,8 @@
   margin-bottom: 0;
 }
 
-.filter-group strong {
+.filter-group strong,
+.filter-label {
   margin-right: 10px;
   font-weight: 600;
 }
@@ -97,15 +98,26 @@
   background-color: #e8e8e8;
 }
 
-.acknowledgements-toggle h2 {
+.acknowledgements-heading {
   margin: 0;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 500;
-  color: #003f7e;
-  font-size: 1.5em;
+}
+
+.acknowledgements-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  color: #003f7e;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.acknowledgements-toggle:focus-visible,
+.filter-btn:focus-visible,
+.publication-action:focus-visible {
+  outline: 3px solid #ad1f24;
+  outline-offset: 2px;
 }
 
 .toggle-icon {
@@ -284,6 +296,30 @@
   margin-top: 5px;
   margin-bottom: 8px;
 }
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.publication-action,
+.publication-actions > span {
+  display: inline-flex;
+}
+
+.color-button-missing {
+  background: #767676;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.color-button-missing::after {
+  content: "*";
+  margin-left: 2px;
+}
 /* Mobile and Tablet Responsiveness */
 @media (max-width: 768px) {
   #publication-filters {
@@ -366,6 +402,19 @@
 #publications-container ul li > a {
   margin-top: 2px;
   display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #publications-container ul li,
+  #publications-container ul li::before,
+  .filter-btn,
+  .toggle-icon {
+    transition: none;
+  }
+
+  #publications-container ul li:hover {
+    transform: none;
+  }
 }
 
 /* Make the publication list items more compact */

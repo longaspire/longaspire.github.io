@@ -115,7 +115,10 @@
   float: right;
   line-height: 40px; }
   .site-nav .menu-icon {
-    display: none; }
+    display: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer; }
   .site-nav .page-link {
     color: #ffffff;
     line-height: 1.5; }
@@ -146,7 +149,7 @@
       .site-nav .trigger {
         clear: both;
         display: none; }
-      .site-nav:hover .trigger {
+      .site-nav:hover .trigger, .site-nav:focus-within .trigger {
         display: block;
         padding-bottom: 5px; }
       .site-nav .page-link {
