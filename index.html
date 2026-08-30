@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;family=Titillium+Web:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS7JzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
   <script type="application/ld+json">
   {
@@ -169,29 +169,30 @@
         <div class="research-card">
           <h3><i class="fas fa-database"></i> Data + AI</h3>
           <ul>
-            <li> Data storage [<i>HyperMR, SIGMOD'25</i>; <i>DeXOR, PVLDB'26</i>], knowledge amalgamation [<i>BoKA,
-                KDD'24</i>], data protection
-              [<i>PIECK, ICDE'24</i>], data selection [<i>CHASe, TKDE'25</i>; <i>TAD, EMNLP'25</i>; <i>CoDIO,
-                NeurIPS'25</i>], data augmentation and synthesis [<i>CogSQL, AAAI'25</i>; <i>NotAllDataAreGoodLabels,
-                NeurIPS'25</i>; <i>TabAug, CSUR'26</i>] for AI model training and serving </li>
-            <li> AI-empowered data cleansing [<i>MPIN, PVLDB'24; BiSIM, ICDE'23</i>], data discovery [<i>nlcTables,
-                SIGIR'25</i>; <i>TableCopilot, VLDB'25</i>; <i>RedParrot, ICDE'26</i>; <i>ChronosBI, SIGMOD'26</i>],
-              data ingestion [<i>Hippo,
-                SIGMOD'25</i>], and system-level
-              optimizations [<i>SafeLoad, PVLDB'26</i>; <i>ScaleSense, PVLDB'26</i>] </li>
+            <li> Data preparation and governance for AI: data storage [<i>HyperMR, SIGMOD'25</i>; <i>DeXOR,
+                VLDB'25</i>], knowledge amalgamation [<i>BoKA, KDD'24</i>], data protection [<i>PIECK,
+                ICDE'24</i>], data selection [<i>CHASe, TKDE'25</i>; <i>TAD, EMNLP'25</i>; <i>CoIDO,
+                NeurIPS'25</i>], and data augmentation and synthesis [<i>CogSQL, AAAI'25</i>;
+                <i>NotAllDataAreGoodLabels, NeurIPS'25</i>; <i>TabAug, CSUR'26</i>].</li>
+            <li> AI for data quality and data systems: imputation and anomaly detection [<i>MPIN, PVLDB'24</i>;
+                <i>AdaCTSi, TKDE'26</i>; <i>CoAD, KDD'26</i>], schema and column understanding
+              [<i>Filter-then-match, CIKM'26</i>; <i>LLM Knows, Speaks Not, EMNLP Findings'26</i>], data discovery
+              and BI [<i>nlcTables, SIGIR'25</i>; <i>TableCopilot, VLDB'25</i>; <i>RedParrot, ICDE Industry'26</i>;
+              <i>ChronosBI, SIGMOD Demo'26</i>], data ingestion [<i>Hippo, SIGMOD'25</i>], and workload optimization
+              [<i>SafeLoad, VLDB'25</i>; <i>ScaleSense, VLDB Industry'26</i>].</li>
           </ul>
         </div>
         <div class="research-card">
           <h3><i class="fas fa-microchip"></i> Efficient AI</h3>
           <ul>
-            <li> Lightweight AI models in edge computing [<i>LightCTS, SIGMOD'23</i>; <i>E2USD, WWW'24</i>; <i>ReCTSi,
-                KDD'24</i>; <i>LightCTS*, TKDE'24</i>; <i>PimShare, TCAD'25</i>] and federated learning [<i>LightTR,
-                ICDE'24</i>; <i>FedBFPT,
-                IJCAI'23</i>; <i>LightTR+, TKDE'25</i>] </li>
-            <li> Efficient LLM inference [<i>HMI, VLDBJ'25</i>; <i>Draft&Verify, ACL'24</i>; <i>SpecVLM, EMNLP'25</i>;
-              <i>HybridKV, ACL'26</i>; <i>Double, ACL'26</i>; <i>LVSpec, ACL'26</i>; <i>HardKV, ICML'26</i>] and
-              fine-tuning [<i>LoRAM, ICLR'25</i>]
-            </li>
+            <li> Lightweight time-series models for edge computing [<i>LightCTS, SIGMOD'23</i>; <i>E2USD,
+                WWW'24</i>; <i>ReCTSi, KDD'24</i>; <i>LightCTS*, TKDE'24</i>; <i>PimShare, TCAD'25</i>] and
+              federated learning [<i>LightTR, ICDE'24</i>; <i>FedBFPT, IJCAI'23</i>; <i>LightTR+, TKDE'25</i>].</li>
+            <li> Efficient large and multimodal model training, inference, and serving: multi-tenant reuse
+              [<i>HMI, VLDBJ'25</i>], speculative and parallel decoding [<i>Draft &amp; Verify, ACL'24</i>;
+              <i>SpecVLM, EMNLP'25</i>; <i>Double, ACL'26</i>; <i>LVSpec, ACL'26</i>; <i>ParallelVLM, CVPR'26</i>],
+              KV-cache compression [<i>HybridKV, ACL'26</i>; <i>HARD-KV, ICML'26</i>], and memory-efficient
+              fine-tuning [<i>LoRAM, ICLR'25</i>].</li>
           </ul>
         </div>
       </div>
@@ -409,6 +410,7 @@ Remember what should be remembered, and forget what should be forgotten. Alter w
 <!-- <i>Last update: </i> -->
       </div>
     </div>
+    <p class="footer-agent-note">🤖 The SuDIS Research Agent, powered by Hermes, helps maintain this site. Humans are still in the loop; spotted a possible hallucination? <a href="https://github.com/longaspire/longaspire.github.io/issues/new">Open an issue</a> or <a href="mailto:lihuan.cs@zju.edu.cn">email me</a>.</p>
 
   </div>
 

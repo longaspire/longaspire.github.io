@@ -466,6 +466,18 @@ a.tosu {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
+.footer-agent-note {
+  clear: both;
+  margin: 0.35rem 0 0;
+  color: #828282;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  text-align: center; }
+
+.footer-agent-note a {
+  color: inherit;
+  text-decoration: underline; }
+
 @media screen and (max-width: 950px) {
   .footer-col-1,
   .footer-col-2 {
